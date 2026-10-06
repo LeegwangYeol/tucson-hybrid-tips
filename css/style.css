@@ -1,0 +1,367 @@
+/**
+ * ==============================================================================
+ * Tucson Hybrid Smart Key Trunk Prevention Tips Website
+ * File: css/style.css
+ * Description: Styles for Advanced Tips & Hidden Features (#secrets) Section
+ * Design System Compliance: Obsidian Automotive Tokens, WCAG 2.1 AAA, CLS=0
+ * ==============================================================================
+ */
+
+/* ==========================================================================
+ * 1. SECTION LAYOUT & CONTAINER
+ * ========================================================================== */
+.secrets-section {
+  position: relative;
+  background-color: var(--color-bg-surface, #131b2e);
+  border-top: var(--border-subtle, 1px solid rgba(255, 255, 255, 0.08));
+  border-bottom: var(--border-subtle, 1px solid rgba(255, 255, 255, 0.08));
+  padding-top: var(--space-12, 4.5rem);
+  padding-bottom: var(--space-12, 4.5rem);
+}
+
+.secrets-controls,
+.secrets-filter-tabs,
+.secrets-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3, 0.75rem);
+  margin-top: var(--space-6, 1.5rem);
+  margin-bottom: var(--space-8, 2.5rem);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .secrets-controls,
+  .secrets-filter-tabs,
+  .secrets-filter-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: var(--space-2, 0.5rem);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+  .secrets-controls::-webkit-scrollbar,
+  .secrets-filter-tabs::-webkit-scrollbar,
+  .secrets-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+ * 2. FILTER TABS & BUTTONS
+ * ========================================================================== */
+.secrets-tab-btn,
+.secrets-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2, 0.5rem);
+  padding: 0.65rem 1.25rem;
+  font-family: var(--font-family-base, sans-serif);
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: var(--font-weight-semibold, 600);
+  color: var(--color-text-secondary, #94a3b8);
+  background: rgba(19, 27, 46, 0.6);
+  border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-pill, 9999px);
+  cursor: pointer;
+  min-height: 44px; /* Touch target safety (T2-RSP-05) */
+  transition: all var(--duration-fast, 150ms) var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1));
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.secrets-tab-btn:hover,
+.secrets-filter-btn:hover {
+  background: rgba(30, 41, 59, 0.85);
+  color: var(--color-text-pure, #ffffff);
+  border-color: rgba(0, 170, 210, 0.4);
+}
+
+.secrets-tab-btn:focus-visible,
+.secrets-filter-btn:focus-visible {
+  outline: 2px solid var(--color-accent-cyan, #00aad2);
+  outline-offset: 2px;
+}
+
+.secrets-tab-btn.active,
+.secrets-tab-btn[aria-selected="true"],
+.secrets-filter-btn.active,
+.secrets-filter-btn[aria-selected="true"] {
+  background: linear-gradient(135deg, var(--color-accent-cyan, #00aad2) 0%, var(--color-accent-cyan-dark, #007a99) 100%);
+  color: var(--color-text-pure, #ffffff);
+  border-color: var(--color-accent-cyan, #00aad2);
+  box-shadow: 0 4px 14px rgba(0, 170, 210, 0.4);
+}
+
+.filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-2xs, 0.6875rem);
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-pill, 9999px);
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: var(--font-weight-bold, 700);
+  min-width: 1.25rem;
+  line-height: 1.2;
+}
+
+.secrets-tab-btn.active .filter-count,
+.secrets-filter-btn.active .filter-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Instantaneous Filter Toggle without CLS */
+.is-hidden {
+  display: none !important;
+}
+
+/* ==========================================================================
+ * 3. SECRETS GRID
+ * ========================================================================== */
+.secrets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6, 1.5rem);
+}
+
+@media (max-width: 900px) {
+  .secrets-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+ * 4. SECRET CARDS
+ * ========================================================================== */
+.secret-card {
+  padding: var(--space-6, 1.5rem);
+  display: flex;
+  flex-direction: column;
+  background: var(--glass-bg, rgba(19, 27, 46, 0.75));
+  backdrop-filter: blur(var(--glass-blur, 16px));
+  -webkit-backdrop-filter: blur(var(--glass-blur, 16px));
+  border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-lg, 1rem);
+  transition: transform var(--duration-normal, 250ms) var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)),
+              box-shadow var(--duration-normal, 250ms) var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)),
+              border-color var(--duration-fast, 150ms) ease;
+}
+
+.secret-card:hover {
+  transform: translateY(-3px);
+  background: var(--glass-bg-hover, rgba(30, 41, 59, 0.85));
+  border-color: rgba(0, 170, 210, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.secret-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3, 0.75rem);
+}
+
+.secret-badges {
+  display: flex;
+  gap: var(--space-2, 0.5rem);
+  flex-wrap: wrap;
+}
+
+.secret-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--font-size-2xs, 0.75rem);
+  font-weight: var(--font-weight-bold, 700);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill, 9999px);
+  letter-spacing: 0.02em;
+}
+
+.secret-num {
+  font-family: var(--font-family-mono, monospace);
+  font-size: var(--font-size-xs, 0.8125rem);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-text-tertiary, #475569);
+}
+
+.secret-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.secret-title {
+  font-size: var(--font-size-lg, 1.25rem);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-text-pure, #ffffff);
+  line-height: var(--line-height-heading, 1.35);
+  margin-top: 0;
+  margin-bottom: var(--space-2, 0.5rem);
+}
+
+.secret-summary {
+  font-size: var(--font-size-sm, 0.875rem);
+  color: var(--color-text-secondary, #94a3b8);
+  line-height: var(--line-height-body, 1.6);
+  margin-bottom: var(--space-4, 1rem);
+  padding-bottom: var(--space-3, 0.75rem);
+  border-bottom: var(--border-subtle, 1px solid rgba(255, 255, 255, 0.08));
+}
+
+/* ==========================================================================
+ * 5. STEP LISTS & PROCEDURES
+ * ========================================================================== */
+.secret-steps {
+  margin-bottom: var(--space-4, 1rem);
+}
+
+.steps-title {
+  font-size: var(--font-size-xs, 0.8125rem);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-accent-cyan, #00aad2);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide, 0.05em);
+  margin-top: 0;
+  margin-bottom: var(--space-2, 0.5rem);
+}
+
+.secret-step-list,
+.step-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2-5, 0.625rem);
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.secret-step-list li,
+.step-list li {
+  font-size: var(--font-size-sm, 0.875rem);
+  color: var(--color-text-primary, #f1f5f9);
+  line-height: var(--line-height-body, 1.6);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2, 0.5rem);
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: rgba(0, 170, 210, 0.15);
+  color: var(--color-accent-cyan, #00aad2);
+  border-radius: var(--radius-pill, 9999px);
+  font-size: var(--font-size-2xs, 0.6875rem);
+  font-weight: var(--font-weight-bold, 700);
+  flex-shrink: 0;
+  margin-top: 0.18rem;
+}
+
+.step-list code,
+.secret-step-list code {
+  font-family: var(--font-family-mono, monospace);
+  font-size: var(--font-size-xs, 0.8125rem);
+  background: rgba(0, 170, 210, 0.1);
+  color: var(--color-accent-cyan, #00aad2);
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-xs, 0.25rem);
+  border: 1px solid rgba(0, 170, 210, 0.2);
+}
+
+/* ==========================================================================
+ * 6. CALLOUT BOXES & HIGHLIGHTS
+ * ========================================================================== */
+.secret-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3, 0.75rem);
+  padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+  border-radius: var(--radius-sm, 0.375rem);
+  margin-bottom: var(--space-4, 1rem);
+  font-size: var(--font-size-xs, 0.8125rem);
+  line-height: var(--line-height-body, 1.6);
+  margin-top: auto;
+}
+
+.callout-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.callout-text {
+  color: var(--color-text-primary, #f1f5f9);
+}
+
+.callout-warning {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.callout-success {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.callout-info {
+  background: rgba(0, 170, 210, 0.08);
+  border: 1px solid rgba(0, 170, 210, 0.3);
+}
+
+/* ==========================================================================
+ * 7. CARD FOOTER & BOOKMARK ACTION
+ * ========================================================================== */
+.secret-card-footer,
+.secret-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: var(--space-3, 0.75rem);
+  border-top: var(--border-subtle, 1px solid rgba(255, 255, 255, 0.08));
+}
+
+.secret-bookmark-btn,
+.btn-bookmark {
+  min-height: 44px; /* Touch target safety (T2-RSP-05) */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2, 0.5rem);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-family-base, sans-serif);
+  font-size: var(--font-size-xs, 0.8125rem);
+  font-weight: var(--font-weight-medium, 500);
+  border-radius: var(--radius-md, 0.5rem);
+  transition: all var(--duration-fast, 150ms) ease;
+}
+
+.secret-bookmark-btn:focus-visible,
+.btn-bookmark:focus-visible {
+  outline: 2px solid var(--color-accent-cyan, #00aad2);
+  outline-offset: 2px;
+}
+
+.secret-bookmark-btn.is-bookmarked,
+.secret-bookmark-btn[aria-pressed="true"],
+.btn-bookmark.is-bookmarked,
+.btn-bookmark[aria-pressed="true"] {
+  background: rgba(245, 158, 11, 0.15) !important;
+  border-color: var(--color-warning-amber, #f59e0b) !important;
+  color: var(--color-warning-amber, #f59e0b) !important;
+}
+
+.bookmark-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.bookmark-text {
+  font-size: var(--font-size-xs, 0.8125rem);
+}

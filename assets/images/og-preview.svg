@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#131b2e"/>
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00aad2"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg-grad)"/>
+
+  <!-- Border Frame -->
+  <rect x="24" y="24" width="1152" height="582" rx="16" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="2"/>
+
+  <!-- Badge -->
+  <rect x="80" y="80" width="340" height="44" rx="22" fill="rgba(230, 57, 70, 0.15)" stroke="#e63946" stroke-width="1.5"/>
+  <text x="100" y="108" fill="#ff4d5d" font-size="18" font-family="'Pretendard', sans-serif" font-weight="bold">🚨 투싼 하이브리드 (NX4) 오너 필독</text>
+
+  <!-- Title -->
+  <text x="80" y="190" fill="#ffffff" font-size="48" font-family="'Pretendard', sans-serif" font-weight="bold">주머니 속 1.5초의 압박,</text>
+  <text x="80" y="255" fill="url(#cyan-grad)" font-size="48" font-family="'Pretendard', sans-serif" font-weight="bold">150만 원의 수리비를 부른다</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="325" fill="#94a3b8" font-size="24" font-family="'Pretendard', sans-serif">스마트키 트렁크 오개방 및 지하주차장 천장 배관 충돌 방지 실전 가이드</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(80, 400)">
+    <!-- Box 1 -->
+    <rect x="0" y="0" width="220" height="120" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+    <text x="24" y="50" fill="#00aad2" font-size="32" font-weight="bold" font-family="'Pretendard', sans-serif">1.5초</text>
+    <text x="24" y="85" fill="#94a3b8" font-size="16" font-family="'Pretendard', sans-serif">버튼 인식 시간</text>
+
+    <!-- Box 2 -->
+    <rect x="250" y="0" width="220" height="120" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+    <text x="274" y="50" fill="#f59e0b" font-size="32" font-weight="bold" font-family="'Pretendard', sans-serif">30~50m</text>
+    <text x="274" y="85" fill="#94a3b8" font-size="16" font-family="'Pretendard', sans-serif">RF 신호 도달 거리</text>
+
+    <!-- Box 3 -->
+    <rect x="500" y="0" width="240" height="120" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+    <text x="524" y="50" fill="#e63946" font-size="32" font-weight="bold" font-family="'Pretendard', sans-serif">150만 원+</text>
+    <text x="524" y="85" fill="#94a3b8" font-size="16" font-family="'Pretendard', sans-serif">예상 파손 수리비</text>
+  </g>
+</svg>

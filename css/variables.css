@@ -1,0 +1,205 @@
+/**
+ * ==============================================================================
+ * Tucson Hybrid Smart Key Trunk Prevention Design System
+ * File: variables.css
+ * Purpose: Complete Design Tokens (Color, Glassmorphism, Typography, Shadows, Spacing)
+ * Author: Teamwork CSS Design System Explorer
+ * ==============================================================================
+ */
+
+:root {
+  /* ==========================================================================
+   * 1. COLOR TOKENS: AUTOMOTIVE & BRAND PALETTE
+   * ========================================================================== */
+  
+  /* Primary Background Surfaces (Obsidian Automotive Theme) */
+  --color-bg-base: #0b0f19;          /* Deep Obsidian: Deepest canvas background */
+  --color-bg-surface: #131b2e;       /* Surface Dark: Elevated sections & containers */
+  --color-bg-card: #1e293b;          /* Surface Card: Interactive cards & modules */
+  --color-bg-elevated: #283548;      /* High elevation: Hovered states & popovers */
+  --color-bg-overlay: rgba(11, 15, 25, 0.85); /* Sticky nav & backdrop */
+
+  /* Glassmorphism Surface Tokens */
+  --glass-bg: rgba(19, 27, 46, 0.75);         /* Translucent card fill */
+  --glass-bg-hover: rgba(30, 41, 59, 0.85);   /* Hovered card fill */
+  --glass-blur: 16px;                         /* Standard backdrop blur radius */
+  --glass-border: rgba(255, 255, 255, 0.08);  /* Subtle 1px translucent border */
+  --glass-border-bright: rgba(255, 255, 255, 0.18); /* Highlighted border */
+  --border-glass-bright: var(--glass-border-bright); /* Dual-wired alias */
+  --glass-reflection: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.16) 50%,
+    rgba(255, 255, 255, 0.100) 100%
+  );
+
+  /* Hyundai Brand & Functional Accents */
+  --color-hyundai-blue: #002c5f;      /* Hyundai Heritage Blue */
+  --color-accent-cyan: #00aad2;       /* Hyundai Active Cyan (Primary interactive) */
+  --color-accent-cyan-hover: #1ac0ea;  /* Cyan brightened state */
+  --color-accent-cyan-dark: #007a99;   /* Cyan darkened shade for gradients */
+  --color-accent-cyan-glow: rgba(0, 170, 210, 0.35);
+  --color-accent-cyan-subtle: rgba(0, 170, 210, 0.12);
+
+  --color-nline-red: #ff808b;         /* N Line Performance Red / Danger (WCAG AAA >= 7.1:1 on #0b0f19) */
+  --color-nline-red-hover: #ffa3ab;   /* Red brightened state */
+  --color-nline-red-dark: #e63946;    /* Red darkened shade for gradients */
+  --color-nline-red-glow: rgba(255, 128, 139, 0.35);
+  --color-nline-red-subtle: rgba(255, 128, 139, 0.12);
+  --color-danger: #ff808b;
+  --color-danger-text: #ff808b;
+
+  --color-warning-amber: #f59e0b;     /* Warning Amber (Caution, clearance alert) */
+  --color-warning-amber-hover: #fbbf24;
+  --color-warning-amber-glow: rgba(245, 158, 11, 0.35);
+  --color-warning-amber-subtle: rgba(245, 158, 11, 0.12);
+
+  --color-success-emerald: #10b981;   /* Success Emerald (Safe clearance, verified) */
+  --color-success-emerald-hover: #34d399;
+  --color-success-emerald-glow: rgba(16, 185, 129, 0.35);
+  --color-success-emerald-subtle: rgba(16, 185, 129, 0.12);
+
+  /* Typography Colors (High-Contrast Korean Readability, WCAG AAA compliant) */
+  --color-text-pure: #ffffff;         /* Pure White: Headings & badges */
+  --color-text-primary: #f1f5f9;      /* 95% contrast against Deep Obsidian */
+  --color-text-secondary: #94a3b8;    /* Explanatory text & captions */
+  --color-text-muted: #94a3b8;        /* Contrast >= 7.5:1 on #0b0f19 (WCAG AAA compliant) */
+  --color-text-tertiary: #475569;     /* Subtle footnotes */
+
+  /* Borders & Dividers */
+  --border-subtle: 1px solid rgba(255, 255, 255, 0.08);
+  --border-glass: 1px solid var(--glass-border);
+  --border-glass-bright-line: 1px solid var(--glass-border-bright);
+  --border-accent: 1px solid rgba(0, 170, 210, 0.4);
+  --border-danger: 1px solid rgba(230, 57, 70, 0.4);
+  --border-warning: 1px solid rgba(245, 158, 11, 0.4);
+  --border-success: 1px solid rgba(16, 185, 129, 0.4);
+
+  /* ==========================================================================
+   * 2. TYPOGRAPHY SYSTEM
+   * ========================================================================== */
+  
+  /* Font Family Stack: Optimized for Korean rendering on macOS, Windows, iOS, Android */
+  --font-family-base: "Pretendard", -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,
+    Consolas, "Liberation Mono", monospace;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Fluid Font Sizes via clamp() (Mobile -> Large Desktop) */
+  --font-size-2xs: clamp(0.6875rem, 0.65rem + 0.15vw, 0.75rem);   /* 11~12px */
+  --font-size-xs: clamp(0.75rem, 0.70rem + 0.22vw, 0.8125rem);    /* 12~13px */
+  --font-size-sm: clamp(0.8125rem, 0.76rem + 0.25vw, 0.875rem);    /* 13~14px */
+  --font-size-base: clamp(0.9375rem, 0.88rem + 0.28vw, 1rem);      /* 15~16px */
+  --font-size-md: clamp(1.0625rem, 0.98rem + 0.38vw, 1.125rem);    /* 17~18px */
+  --font-size-lg: clamp(1.1875rem, 1.08rem + 0.48vw, 1.25rem);     /* 19~20px */
+  --font-size-xl: clamp(1.375rem, 1.22rem + 0.7vw, 1.5rem);        /* 22~24px */
+  --font-size-2xl: clamp(1.625rem, 1.4rem + 1.0vw, 2rem);          /* 26~32px */
+  --font-size-3xl: clamp(2rem, 1.68rem + 1.5vw, 2.5rem);           /* 32~40px */
+  --font-size-4xl: clamp(2.375rem, 1.95rem + 2.0vw, 3.25rem);      /* 38~52px */
+
+  /* Line Heights */
+  --line-height-tight: 1.2;     /* Hero headings & stat values */
+  --line-height-heading: 1.35;  /* Section & card headings */
+  --line-height-body: 1.65;     /* Korean body copy readability */
+  --line-height-relaxed: 1.8;   /* Extended disclaimer paragraphs */
+
+  /* Korean Typography Optimization: Letter Spacing */
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-normal: -0.015em;
+  --letter-spacing-wide: 0.04em;
+
+  /* ==========================================================================
+   * 3. ELEVATION, GLOW & SHADOW TOKENS
+   * ========================================================================== */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.7);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.85);
+
+  --shadow-glow-cyan: 0 0 24px rgba(0, 170, 210, 0.28);
+  --shadow-glow-cyan-lg: 0 0 45px rgba(0, 170, 210, 0.45);
+  --shadow-glow-red: 0 0 28px rgba(230, 57, 70, 0.38);
+  --shadow-glow-red-lg: 0 0 50px rgba(230, 57, 70, 0.5);
+  --shadow-glow-amber: 0 0 24px rgba(245, 158, 11, 0.32);
+  --shadow-glow-emerald: 0 0 24px rgba(16, 185, 129, 0.32);
+
+  /* ==========================================================================
+   * 4. SPACING & SIZING SCALE
+   * ========================================================================== */
+  --space-0-5: 0.125rem;  /* 2px */
+  --space-1: 0.25rem;     /* 4px */
+  --space-1-5: 0.375rem;  /* 6px */
+  --space-2: 0.5rem;      /* 8px */
+  --space-2-5: 0.625rem;  /* 10px */
+  --space-3: 0.75rem;     /* 12px */
+  --space-4: 1rem;        /* 16px */
+  --space-5: 1.25rem;     /* 20px */
+  --space-6: 1.5rem;      /* 24px */
+  --space-7: 1.75rem;     /* 28px */
+  --space-8: 2rem;        /* 32px */
+  --space-10: 2.5rem;     /* 40px */
+  --space-12: 3rem;       /* 48px */
+  --space-16: 4rem;       /* 64px */
+  --space-20: 5rem;       /* 80px */
+  --space-24: 6rem;       /* 96px */
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-2xl: 30px;
+  --radius-pill: 9999px;
+
+  /* Layout Containers */
+  --container-max: 1200px;
+  --container-narrow: 860px;
+  --container-readable: 680px;
+
+  /* ==========================================================================
+   * 5. MOTION & TRANSITIONS
+   * ========================================================================== */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-very-slow: 700ms;
+
+  /* ==========================================================================
+   * 6. Z-INDEX SYSTEM
+   * ========================================================================== */
+  --z-base: 1;
+  --z-card-hover: 5;
+  --z-dropdown: 50;
+  --z-sticky-nav: 100;
+  --z-modal-backdrop: 500;
+  --z-modal: 600;
+  --z-toast: 1000;
+  --z-emergency-banner: 1100;
+}
+
+/* ==========================================================================
+ * Modern Typography Wrapping Defaults (progressive enhancement)
+ * modern-web-guidance: text-wrap: balance for titles, text-wrap: pretty for body
+ * ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+.balance-text {
+  text-wrap: balance;
+}
+
+p, li, blockquote, dd,
+.pretty-text {
+  text-wrap: pretty;
+}

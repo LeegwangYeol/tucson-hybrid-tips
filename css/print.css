@@ -1,0 +1,335 @@
+/**
+ * ==============================================================================
+ * Tucson Hybrid Smart Key Trunk Prevention Design System
+ * File: print.css
+ * Purpose: Clean, Monochrome A4 Glovebox Emergency Sheet (@media print)
+ * Author: Teamwork CSS Design System Explorer
+ * ==============================================================================
+ */
+
+/* Hide print-only elements on regular screens */
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+ * PRINT-SPECIFIC STYLESHEET FOR A4 GLOVEBOX SHEET
+ * ========================================================================== */
+@media print {
+  /* Set exact A4 paper dimensions and comfortable glovebox margins */
+  @page {
+    size: A4 portrait;
+    margin: 12mm 12mm 12mm 12mm;
+  }
+
+  /* Global Print Reset: Pure white background & high-contrast ink-saving typography */
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  html, body {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif !important;
+    font-size: 9.5pt !important;
+    line-height: 1.45 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide interactive web UI, navigation, buttons, sliders, toasts, and hero backgrounds */
+  .site-header,
+  .site-footer,
+  .nav-container,
+  .mobile-menu-toggle,
+  .mobile-nav-drawer,
+  .hero-glow-bg,
+  .hero-cta-group,
+  .btn,
+  .range-slider-wrapper,
+  input[type="range"],
+  .toast-container,
+  .skip-link,
+  .no-print,
+  #simulator-container,
+  .simulator-layout {
+    display: none !important;
+  }
+
+  /* Show dedicated print sections */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Glovebox Sheet Header */
+  .print-header {
+    border-bottom: 2pt solid #000000;
+    padding-bottom: 3mm;
+    margin-bottom: 4mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .print-header-title {
+    font-size: 16pt !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.5pt;
+    margin: 0 0 1mm 0 !important;
+  }
+
+  .print-header-subtitle {
+    font-size: 9pt !important;
+    color: #333333 !important;
+    margin: 0 !important;
+  }
+
+  .print-header-badge {
+    font-size: 8pt !important;
+    font-weight: 700 !important;
+    border: 1pt solid #000000 !important;
+    padding: 1mm 3mm !important;
+    border-radius: 2mm !important;
+    text-transform: uppercase;
+  }
+
+  /* 2-Column Foldable Grid for Glovebox Storage (Fold in Half) */
+  .print-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6mm !important;
+    margin-bottom: 4mm !important;
+  }
+
+  /* Section Containers */
+  .print-card {
+    border: 1pt solid #444444 !important;
+    border-radius: 2mm !important;
+    padding: 3mm 4mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 3.5mm !important;
+  }
+
+  .print-card-title {
+    font-size: 10.5pt !important;
+    font-weight: 700 !important;
+    border-bottom: 1pt solid #cccccc !important;
+    padding-bottom: 1.5mm !important;
+    margin-bottom: 2mm !important;
+    display: flex;
+    align-items: center;
+    gap: 2mm;
+  }
+
+  /* 1. Emergency 0.5s Stop Protocol (Heavy Border Callout) */
+  .print-emergency-box {
+    border: 2pt solid #000000 !important;
+    background: #f4f4f4 !important;
+    padding: 3mm 4mm !important;
+    border-radius: 2mm !important;
+    margin-bottom: 4mm !important;
+    break-inside: avoid !important;
+  }
+
+  .print-emergency-title {
+    font-size: 11pt !important;
+    font-weight: 800 !important;
+    color: #000000 !important;
+    margin-bottom: 1mm !important;
+  }
+
+  .print-emergency-rule {
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Ordered & Unordered Lists in Print */
+  .print-list {
+    margin: 0 !important;
+    padding-left: 4.5mm !important;
+    list-style: decimal outside !important;
+  }
+
+  .print-list li {
+    font-size: 8.5pt !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1.5mm !important;
+  }
+
+  .print-list-bullets {
+    list-style: square outside !important;
+  }
+
+  /* Path Breadcrumbs for Infotainment */
+  .print-menu-path {
+    background: #f0f0f0 !important;
+    border: 0.5pt solid #888888 !important;
+    padding: 1mm 2mm !important;
+    font-family: ui-monospace, SFMono-Regular, monospace !important;
+    font-size: 8pt !important;
+    font-weight: 700 !important;
+    display: inline-block;
+    margin-block: 1mm;
+  }
+
+  /* Print Tables */
+  .print-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-block: 2mm !important;
+    font-size: 8pt !important;
+  }
+
+  .print-table th,
+  .print-table td {
+    border: 0.5pt solid #888888 !important;
+    padding: 1.5mm 2mm !important;
+    text-align: left !important;
+  }
+
+  .print-table th {
+    background-color: #eeeeee !important;
+    font-weight: 700 !important;
+  }
+
+  /* Checkbox Boxes for Print */
+  .print-check-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 2mm !important;
+    margin-bottom: 2mm !important;
+    font-size: 8.5pt !important;
+    line-height: 1.35 !important;
+  }
+
+  .print-checkbox {
+    width: 3.5mm !important;
+    height: 3.5mm !important;
+    border: 1pt solid #000000 !important;
+    border-radius: 0.5mm !important;
+    flex-shrink: 0 !important;
+    margin-top: 0.5mm !important;
+  }
+
+  /* Printable Footer / Metadata */
+  .print-footer {
+    border-top: 1pt solid #888888 !important;
+    padding-top: 2mm !important;
+    margin-top: 4mm !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 7.5pt !important;
+    color: #555555 !important;
+  }
+
+  /* Dual-wired Print Sheet Aliases */
+  .printable-card,
+  #print-card {
+    background: #ffffff !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .card-fold-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6mm !important;
+    margin-bottom: 4mm !important;
+  }
+
+  .fold-col {
+    border: 1pt solid #444444 !important;
+    border-radius: 2mm !important;
+    padding: 3mm 4mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 3.5mm !important;
+  }
+
+  .fold-title {
+    font-size: 10.5pt !important;
+    font-weight: 700 !important;
+    border-bottom: 1pt solid #cccccc !important;
+    padding-bottom: 1.5mm !important;
+    margin-bottom: 2mm !important;
+  }
+
+  .fold-list {
+    margin: 0 !important;
+    padding-left: 4.5mm !important;
+    list-style: decimal outside !important;
+  }
+
+  .fold-list li {
+    font-size: 8.5pt !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1.5mm !important;
+  }
+
+  .print-card-footer {
+    border-top: 1pt solid #888888 !important;
+    padding-top: 2mm !important;
+    margin-top: 4mm !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 7.5pt !important;
+    color: #555555 !important;
+  }
+
+  /* Prevent awkward page breaks across content blocks */
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  table, figure, img, .print-card, .manual-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Simplified Owner's Manual (#manual) Print Rules */
+  .manual-tabs-container,
+  .manual-search-container,
+  .manual-accordion-btn {
+    display: none !important;
+  }
+
+  .manual-panel {
+    display: block !important;
+    visibility: visible !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 5mm !important;
+  }
+
+  .manual-card {
+    border: 1pt solid #444444 !important;
+    border-radius: 2mm !important;
+    padding: 3mm 4mm !important;
+    margin-bottom: 4mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    background: #ffffff !important;
+  }
+
+  .manual-accordion-content,
+  .manual-accordion-content[hidden],
+  .manual-card .manual-accordion-content[hidden] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+

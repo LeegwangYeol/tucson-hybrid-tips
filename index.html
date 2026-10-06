@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>현대 투싼 하이브리드(NX4) 스마트키 트렁크 오개방 방지 가이드 & 시뮬레이터</title>
+
+  <!-- SEO & Search Indexing -->
+  <meta name="description" content="현대 투싼 하이브리드(NX4) 차주 필수 가이드! 바지 주머니 속 스마트키 1.5초 눌림으로 인한 지하주차장 천장 배관·기계식 주차타워 트렁크 충돌 파손을 방지하는 4대 예방법, 인포테인먼트 높이 조절 매뉴얼, 대화형 시뮬레이터 및 체크리스트.">
+  <meta name="keywords" content="투싼 하이브리드, 투싼 NX4, 스마트키 트렁크 열림, 전동트렁크 충돌, 스마트 테일게이트 끄기, 트렁크 높이 조절, 아연합금 키케이스, 기계식 주차장">
+  <meta name="author" content="투싼 오너스 세이프티 가이드">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tucson-trunk-tips.vercel.app/">
+
+  <!-- Theme & PWA -->
+  <meta name="theme-color" content="#0d1117">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- OpenGraph (KakaoTalk / Facebook / Slack) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="투싼 하이브리드 트렁크 안전 가이드">
+  <meta property="og:title" content="투싼 하이브리드 스마트키 트렁크 오개방 방지 가이드 & 시뮬레이터">
+  <meta property="og:description" content="주머니 속 1.5초의 압박으로 150만원 수리비? 지하주차장 배관 충돌을 막는 4대 예방 수칙과 실시간 충돌 시뮬레이터.">
+  <meta property="og:image" content="https://tucson-trunk-tips.vercel.app/assets/images/og-preview.png">
+  <meta property="og:image:secure_url" content="https://tucson-trunk-tips.vercel.app/assets/images/og-preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="투싼 하이브리드 테일게이트 충돌 방지 인포그래픽">
+  <meta property="og:url" content="https://tucson-trunk-tips.vercel.app/">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="투싼 하이브리드 스마트키 트렁크 오개방 방지 가이드">
+  <meta name="twitter:description" content="지하주차장 배관 충돌 및 기계식 주차타워 파손 방지 팁, 트렁크 높이 시뮬레이터.">
+  <meta name="twitter:image" content="https://tucson-trunk-tips.vercel.app/assets/images/og-preview.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Module Preload Resource Hints -->
+  <link rel="modulepreload" href="js/app.js">
+  <link rel="modulepreload" href="js/manual.js">
+  <link rel="modulepreload" href="js/simulator.js">
+  <link rel="modulepreload" href="js/checklist.js">
+  <link rel="modulepreload" href="js/storage.js">
+  <link rel="modulepreload" href="js/secrets.js">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+
+  <!-- Schema.org Structured Data with TechArticle, HowTo, and FAQPage Rich Snippets -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "현대 투싼 하이브리드(NX4) 스마트키 트렁크 오개방 방지 및 높이 설정 가이드",
+      "description": "바지 주머니 압박으로 인한 트렁크 오개방 및 천장 배관 충돌 사고를 방지하기 위한 4대 예방 수칙과 실시간 충돌 시뮬레이터.",
+      "inLanguage": "ko-KR",
+      "datePublished": "2026-10-01T00:00:00+09:00",
+      "dateModified": "2026-10-01T00:00:00+09:00",
+      "mainEntityOfPage": "https://tucson-trunk-tips.vercel.app/",
+      "image": "https://tucson-trunk-tips.vercel.app/assets/images/og-preview.png",
+      "about": {
+        "@type": "Car",
+        "name": "Hyundai Tucson Hybrid (NX4)"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "투싼 오너스 세이프티 팀"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "투싼 오너스 세이프티 가이드",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tucson-trunk-tips.vercel.app/assets/favicon.svg"
+        }
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "투싼 테일게이트 개방 높이 3초 수동 메모리 설정법",
+      "description": "지하주차장 천장 배관 높이에 맞춰 원하는 높이로 테일게이트를 연 뒤 닫힘 버튼을 3초간 길게 눌러 메모리하는 절차.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "원하는 높이로 수동 조절",
+          "text": "테일게이트를 연 후, 손으로 원하는 높이(배관 아래 안전 간극 확보)까지 부드럽게 맞춥니다."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "닫힘 버튼 3초간 롱프레스",
+          "text": "테일게이트 안쪽 테두리에 위치한 닫힘 버튼을 3초 이상 길게 누릅니다."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "비프음 완료 확인",
+          "text": "'삐- 삐-' 하는 확인 경고음이 울리면 해당 높이로 자동 메모리 저장 완료됩니다."
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "스마트 테일게이트 자동 열림 기능을 완전히 끄려면 어떻게 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "인포테인먼트 화면에서 [설정] → [차량] → [도어] → [스마트 테일게이트] 체크박스를 해제하면 스마트키를 소지하고 트렁크 뒤에 서 있어도 자동으로 열리지 않습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "기계식 주차타워 입고 전 반드시 해야 할 조치는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "인포테인먼트에서 스마트 테일게이트 기능을 반드시 끄고, 스마트키를 주머니에서 꺼내 컵홀더나 콘솔에 보관하여 주머니 압박으로 인한 오작동을 원천 차단해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "투싼 스마트키 트렁크 버튼 오작동을 막는 가장 효과적인 물리 케이스는?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "버튼부가 0.8mm 이상 음각 처리된 아연합금 풀커버 프레임 케이스를 장착하고, 바지 주머니 대신 벨트 카라비너에 체결하여 소지하는 것이 가장 안전합니다."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <!-- 1. Keyboard Bypass Skip Link -->
+  <a href="#main-content" class="skip-link">본문 바로가기 (Skip to content)</a>
+
+  <!-- Global Live Announcer for Asynchronous Messages -->
+  <div id="global-announcer" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- 2. Sticky Glassmorphic Header & Navbar (M1) -->
+  <header id="navbar" class="site-header" role="banner">
+    <div class="nav-container">
+      <a href="#hero" class="site-logo nav-brand" aria-label="TUCSON HYBRID 투싼 하이브리드 트렁크 안전 가이드 홈">
+        <svg class="site-logo-icon brand-icon" aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 17h14v-4H5v4zm1-8l2-4h8l2 4M4 17a2 2 0 104 0M16 17a2 2 0 104 0"/>
+        </svg>
+        <span class="brand-text">TUCSON <span class="site-logo-badge brand-accent">HYBRID</span></span>
+      </a>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button type="button" class="mobile-menu-toggle nav-toggle" id="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="주 탐색 메뉴 열기">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Primary Navigation Links -->
+      <nav id="primary-nav" class="nav-menu mobile-nav-drawer" aria-label="주요 탐색 메뉴">
+        <ul class="nav-list nav-links" role="list">
+          <li class="nav-item"><a href="#reality-check" class="nav-link mobile-nav-link">위험 현실</a></li>
+          <li class="nav-item"><a href="#scenarios" class="nav-link mobile-nav-link">4대 사고 사례</a></li>
+          <li class="nav-item"><a href="#tips" class="nav-link mobile-nav-link">핵심 예방책</a></li>
+          <li class="nav-item"><a href="#manual" class="nav-link mobile-nav-link">눈높이 설명서</a></li>
+          <li class="nav-item"><a href="#secrets" class="nav-link mobile-nav-link">고급 꿀팁 & 숨은 기능</a></li>
+          <li class="nav-item"><a href="#simulator-section" class="nav-link mobile-nav-link">높이 시뮬레이터</a></li>
+          <li class="nav-item"><a href="#checklist-section" class="nav-link mobile-nav-link">자가진단표</a></li>
+          <li class="nav-item"><a href="#cheat-sheet-section" class="nav-link mobile-nav-link">비상 요약 카드</a></li>
+        </ul>
+        <div class="nav-cta-wrapper nav-actions">
+          <a href="#checklist-section" class="btn btn-primary btn-sm">자가진단 시작</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 3. Main Content Landmark -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- Section 1: Hero Section (M1 Shell / M2 Content) -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-wrapper">
+            <span class="badge badge-warning">🚨 투싼 하이브리드(NX4) 오너 필독</span>
+          </div>
+          <h1 id="hero-heading" class="hero-title">
+            주머니 속 <span class="text-highlight">1.5초</span>의 압박,<br>
+            <span class="text-accent">150만 원</span>의 수리비를 부른다
+          </h1>
+          <p class="hero-desc">
+            현대 투싼 하이브리드(NX4) 스마트키의 주머니 속 1.5초 홀드(HOLD) 버튼 압박으로 인한 지하주차장 천장 배관·기계식 주차타워 트렁크 충돌 대참사를 방지하기 위한 엔지니어링 기반 실전 예방 지침서
+          </p>
+          <div class="hero-cta-group">
+            <a href="#tips" class="btn btn-primary btn-lg">4대 핵심 예방책 보기</a>
+            <a href="#simulator-section" class="btn btn-outline btn-lg">충돌 시뮬레이터 실행</a>
+            <a href="#checklist-section" class="btn btn-outline btn-lg">자가진단 체크리스트</a>
+          </div>
+        </div>
+
+        <!-- Telemetry Stat Cards -->
+        <div class="hero-stats hero-stats-grid grid-4-col" role="region" aria-label="트렁크 오개방 핵심 통계">
+          <div class="stat-card glass-card card-hover">
+            <span class="stat-value stat-value-cyan">1.5초</span>
+            <span class="stat-label">스마트키 버튼 인식 시간</span>
+            <span class="stat-desc">의자 착석 시 직물 압박만으로 작동</span>
+          </div>
+          <div class="stat-card glass-card card-hover">
+            <span class="stat-value stat-value-cyan">30~50m</span>
+            <span class="stat-label">RF 신호 투과 거리</span>
+            <span class="stat-desc">아파트 거실에서 지하 1층 차량까지 도달</span>
+          </div>
+          <div class="stat-card stat-danger glass-card card-hover card-hover-danger">
+            <span class="stat-value stat-value-red">150만+ 원</span>
+            <span class="stat-label">예상 사고 수리비</span>
+            <span class="stat-desc">상부 스포일러·테일게이트 판금 교체</span>
+          </div>
+          <div class="stat-card stat-alert glass-card card-hover card-hover-danger">
+            <span class="stat-value stat-value-amber">0개</span>
+            <span class="stat-label">상부 스포일러 센서 개수</span>
+            <span class="stat-desc">끼임 방지 센서 사각지대 (파손 후 정지)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Reality Check (M2 Content) -->
+    <section id="reality-check" class="section reality-check-section" aria-labelledby="reality-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">ENGINEERING ANALYSIS</span>
+          <h2 id="reality-heading" class="section-title">왜 바지 주머니에서 트렁크가 열릴까?</h2>
+          <p class="section-subtitle section-desc">
+            단순한 부주의가 아닙니다. 인체공학적 직물 장력과 센서 구조적 사각지대의 결합입니다.
+          </p>
+        </div>
+
+        <div class="reality-grid grid grid-2-col">
+          <article class="reality-card glass-card card-hover">
+            <div class="card-icon" aria-hidden="true">👖</div>
+            <h3 class="card-title">1. 대퇴부 굴곡과 직물 장력의 물리학</h3>
+            <p class="card-text">
+              슬랙스나 청바지를 입고 의자에 앉거나 쪼그려 앉을 때, 고관절 굴곡 각도가 90도 이상 꺾이며 바지 주머니 표면 직물 장력이 급격히 상승합니다. 이때 발생하는 2~4kgf의 지속 압력은 스마트키 트렁크 버튼의 작동 기준 시간인 1.0~1.5초를 가볍게 초과하여 의도치 않은 개방 명령을 전송합니다.
+            </p>
+          </article>
+
+          <article class="reality-card glass-card card-hover">
+            <div class="card-icon" aria-hidden="true">📡</div>
+            <h3 class="card-title">2. 433MHz RF 전파의 강력한 콘크리트 투과력</h3>
+            <p class="card-text">
+              현대 스마트키의 433MHz RF 전파 도달 거리는 평지 기준 최대 30~50m에 달합니다. 아파트 거실 소파나 엘리베이터 앞에서 주머니가 눌렸을 때, 콘크리트 슬래브 벽체와 창문을 뚫고 지하 1층 주차장의 차량 수신 모듈(SMK)로 신호가 그대로 전달되어 트렁크가 원격 개방됩니다.
+            </p>
+          </article>
+
+          <article class="reality-card reality-card-alert glass-card card-hover card-hover-danger">
+            <div class="card-icon" aria-hidden="true">⚠️</div>
+            <h3 class="card-title">3. 세이프티 센서의 치명적 사각지대</h3>
+            <p class="card-text">
+              투싼 NX4의 안티 핀치(끼임 방지) 안전 센서는 테일게이트 <strong>좌우 측면 고무 스트립</strong>에만 내장되어 있습니다. 천장 소방 배관이나 주차타워 보와 먼저 충돌하는 <strong>상단 루프 스포일러와 후면 글래스</strong>에는 센서가 전무하며, 모터 과부하 감지만으로는 이미 도장 파손과 차체 프레임 변형이 일어난 후에야 정지합니다.
+            </p>
+          </article>
+
+          <article class="reality-card glass-card card-hover">
+            <div class="card-icon" aria-hidden="true">⏱️</div>
+            <h3 class="card-title">4. 스마트 테일게이트 3초 후방 접근 감지 위험</h3>
+            <p class="card-text">
+              스마트키를 소지한 채 차량 후방 <strong>50~100cm</strong> 감지 영역에 <strong>3초간 머물면</strong> 경고음(비프음) 후 테일게이트가 자동으로 개방됩니다. 협소한 지하주차장에서 차량 뒤를 통과하거나 주변 짐을 정리하던 중 트렁크가 예기치 않게 열려 천장 저상 배관에 충돌하는 사고가 빈번합니다.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: 4 Disaster Scenarios & Repair Matrix (M2 Content) -->
+    <section id="scenarios" class="section scenarios-section" aria-labelledby="scenarios-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">REAL-WORLD CASES</span>
+          <h2 id="scenarios-heading" class="section-title">투싼 오너들이 겪은 4대 파손 시나리오</h2>
+          <p class="section-subtitle section-desc">
+            자동차 동호회와 보배드림에서 반복적으로 보고되는 대표적 파손 사례와 수리 견적
+          </p>
+        </div>
+
+        <div class="scenarios-grid grid grid-2-col">
+          <article class="scenario-card glass-card card-hover">
+            <div class="scenario-header">
+              <span class="scenario-badge badge badge-red badge-danger"><span class="badge-dot"></span>사례 1</span>
+              <h3 class="scenario-title">지하주차장 소방·오수 배관 충돌</h3>
+            </div>
+            <p class="scenario-desc">
+              후진 주차 후 주머니 압박으로 개방되어 2.0~2.1m 높이의 천장 소방 스프링클러 배관이나 오수관 파이프를 직격. 루프 스포일러 파손 및 오수 침수.
+            </p>
+            <div class="scenario-damage">
+              <span class="damage-label">예상 피해:</span>
+              <span class="damage-val">120만 ~ 180만 원</span>
+            </div>
+          </article>
+
+          <article class="scenario-card glass-card card-hover">
+            <div class="scenario-header">
+              <span class="scenario-badge badge badge-red badge-danger"><span class="badge-dot"></span>사례 2</span>
+              <h3 class="scenario-title">기계식 주차타워 승강 중 개방</h3>
+            </div>
+            <p class="scenario-desc">
+              기계식 주차타워 입고 후 집에서 쉬던 중 스마트키가 눌려 팔레트 리프트 이동 중 개방. 타워 철골 H빔에 테일게이트가 압착되어 차체 힌지 비틀림.
+            </p>
+            <div class="scenario-damage">
+              <span class="damage-label">예상 피해:</span>
+              <span class="damage-val">200만 ~ 300만 원 (타워 보상 별도)</span>
+            </div>
+          </article>
+
+          <article class="scenario-card glass-card card-hover">
+            <div class="scenario-header">
+              <span class="scenario-badge badge badge-amber badge-warning"><span class="badge-dot"></span>사례 3</span>
+              <h3 class="scenario-title">자동 세차기 터널 진입 중 개방</h3>
+            </div>
+            <p class="scenario-desc">
+              세차장 진입 대기 중 키 눌림으로 테일게이트 상승. 회전하는 자동세차 대형 롤러 브러시에 트렁크 문짝이 꺾이고 고압수가 트렁크 전장류로 유입.
+            </p>
+            <div class="scenario-damage">
+              <span class="damage-label">예상 피해:</span>
+              <span class="damage-val">150만 ~ 250만 원</span>
+            </div>
+          </article>
+
+          <article class="scenario-card glass-card card-hover">
+            <div class="scenario-header">
+              <span class="scenario-badge badge badge-amber badge-warning"><span class="badge-dot"></span>사례 4</span>
+              <h3 class="scenario-title">폭우·폭설 야외 주차 중 밤샘 개방</h3>
+            </div>
+            <p class="scenario-desc">
+              야간 취침 중 소파에서 키가 눌려 트렁크가 열린 채 방치. 야간 폭우 우천으로 트렁크 하부 수납함 침수 및 하이브리드 고전압 배터리 방전·환기덕트 침수 위험.
+            </p>
+            <div class="scenario-damage">
+              <span class="damage-label">예상 피해:</span>
+              <span class="damage-val">80만 ~ 150만 원 (실내 특수크리닝)</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Accessible Repair Cost Matrix Table -->
+        <div class="table-responsive" tabindex="0" role="region" aria-label="사고 유형별 수리비 비교 표 (가로 스크롤 가능)">
+          <table class="repair-table cost-table spec-table">
+            <caption>투싼 NX4 트렁크 충돌 사고 유형별 피해 내역 및 예상 수리비 비교표</caption>
+            <thead>
+              <tr>
+                <th scope="col">사고 유형</th>
+                <th scope="col">충돌 주요 부위</th>
+                <th scope="col">손상 부품 교체 및 판금 범위</th>
+                <th scope="col">예상 수리비용 (원)</th>
+                <th scope="col">안전 센서 차단 여부</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">지하주차장 배관 충돌</th>
+                <td>상부 루프 스포일러, 보조제동등</td>
+                <td>스포일러 어셈블리 교체, 패널 판금 및 특수 도장, 와이어링 하네스</td>
+                <td class="text-cost cost-amount">120만 ~ 180만 원</td>
+                <td><span class="tag tag-fail badge badge-red"><span class="badge-dot"></span>감지 불가 (사각)</span></td>
+              </tr>
+              <tr>
+                <th scope="row">기계식 주차타워 압착</th>
+                <td>테일게이트 패널, 차체 힌지, 전동 스핀들 모터</td>
+                <td>테일게이트 통교체, 전동 스핀들 모터 어셈블리, 힌지 프레임 판금 도장 교정</td>
+                <td class="text-cost cost-amount">200만 ~ 300만 원+</td>
+                <td><span class="tag tag-fail badge badge-red"><span class="badge-dot"></span>감지 불가</span></td>
+              </tr>
+              <tr>
+                <th scope="row">자동 세차기 브러시 충돌</th>
+                <td>리어 와이퍼, 테일게이트 암, 후면 유리</td>
+                <td>후면 열선 유리 교체 및 틴팅 재시공, 와이퍼 모터, 차체 판금 도색</td>
+                <td class="text-cost cost-amount">150만 ~ 250만 원</td>
+                <td><span class="tag tag-fail badge badge-red"><span class="badge-dot"></span>감지 불가</span></td>
+              </tr>
+              <tr>
+                <th scope="row">우천 시 야외 방치 침수</th>
+                <td>트렁크 내장재, 앰프, 배터리 통풍구</td>
+                <td>플로어 카펫 건조, 전장 배선 교체, 하이브리드 배터리 안전 점검</td>
+                <td class="text-cost cost-amount">80만 ~ 150만 원</td>
+                <td><span class="tag tag-neutral badge badge-subtle">해당 없음</span></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="table-row-highlight">
+                <th scope="row" colspan="3">사고 시 총합 예상 피해액 범위</th>
+                <td class="text-cost cost-amount" colspan="2"><strong>최소 150만 원 ~ 최대 300만 원+</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: 4 Core Actionable Tips (M2 Content) -->
+    <section id="tips" class="section tips-section" aria-labelledby="tips-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">CORE SOLUTIONS</span>
+          <h2 id="tips-heading" class="section-title">트렁크 대참사를 완벽 차단하는 4대 해결책</h2>
+          <p class="section-subtitle section-desc">
+            비용 0원의 차량 설정부터 검증된 물리적 하드웨어 장비까지, 완벽한 다층 방어 체계
+          </p>
+        </div>
+
+        <div class="tips-grid grid grid-2-col">
+          <!-- Tip 1 -->
+          <article class="tip-card glass-card card-hover">
+            <div class="tip-badge-num" aria-hidden="true">TIP 01</div>
+            <h3 class="tip-title">물리적 하드웨어 케이스 장착 (실리콘 케이스 금지)</h3>
+            <p class="tip-lead">부드러운 연질 실리콘 케이스나 젤리 케이스는 주머니 압박을 그대로 전달하여 무용지물입니다.</p>
+            <div class="tip-content">
+              <ul>
+                <li><strong>아연합금 메탈 하드케이스:</strong> 단단한 금속 외골격 프레임이 외부 평면 하중을 지지하여 버튼 눌림 압력을 원천 차단합니다.</li>
+                <li><strong>돌출 베젤 음각 TPU 케이스:</strong> 버튼 주위로 1.5~2mm 돌출된 턱(베젤)이 바지 원단 압력을 흡수하여 버튼 직접 접촉을 방어합니다.</li>
+                <li><strong>실리콘 케이스 사용 금지 경고:</strong> 얇은 젤리 실리콘 케이스는 착석 시 외부 하중을 분산하지 못하므로 비추천하며 즉시 교체하세요.</li>
+                <li><strong>카라비너 벨트 루프 휴대 습관:</strong> 바지 주머니 대신 단독 파우치에 보관하거나, 카라비너를 이용해 벨트 루프에 걸어 주머니 압박을 없앱니다.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tip 2 -->
+          <article class="tip-card glass-card card-hover">
+            <div class="tip-badge-num" aria-hidden="true">TIP 02</div>
+            <h3 class="tip-title">차량 인포테인먼트 및 도어 설정 변경 (0원 해결)</h3>
+            <p class="tip-lead">차량 뒤에서 3초 머물 때 저절로 열리는 스마트 테일게이트 기능을 끄고 속도를 보통으로 변경합니다.</p>
+            <div class="tip-content">
+              <ul>
+                <li><strong>ccNC 시스템 (더 뉴 투싼 페이스리프트):</strong> <code>[설정] → [차량] → [도어] → [스마트 테일게이트]</code> 체크 박스 해제 (OFF).</li>
+                <li><strong>표준형 5W 내비게이션 (NX4 초기형):</strong> <code>[설정] → [차량] → [도어] → [스마트 테일게이트]</code> 체크 해제.</li>
+                <li><strong>계기판 LCD 클러스터 경로:</strong> 스티어링 휠 메뉴 버튼 → <code>[사용자 설정] → [도어] → [스마트 테일게이트]</code> 체크 해제.</li>
+                <li><strong>개방 속도 설정:</strong> <code>[도어] → [파워 테일게이트 열림 속도]</code>를 기본값 <strong>'빠르게'</strong>에서 <strong>'보통'</strong>으로 변경하여 돌발 상황 시 즉각적인 반응 시간을 확보합니다.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tip 3 -->
+          <article class="tip-card glass-card card-hover">
+            <div class="tip-badge-num" aria-hidden="true">TIP 03</div>
+            <h3 class="tip-title">테일게이트 열림 높이 메모리 & 3초 롱프레스</h3>
+            <p class="tip-lead">지하주차장 천장 배관에 닿지 않도록 개방 높이를 안전 각도로 영구 저장합니다.</p>
+            <div class="tip-content">
+              <ul>
+                <li><strong>수동 메모리 3초 세팅법:</strong> 트렁크를 손으로 원하는 안전 높이까지 위치시킨 후, 테일게이트 안쪽 닫힘 버튼(스위치)을 <strong>3초 이상</strong> 길게 누릅니다. '삐-' 확인 비프음이 울리면 해당 각도로 영구 저장됩니다.</li>
+                <li><strong>인포테인먼트 높이 단계:</strong> <code>[도어] → [파워 테일게이트 열림 높이]</code>에서 [완전 열림], [3단계](약 90%), [2단계](약 80%), [1단계], [사용자 높이 설정] 중 선택 가능.</li>
+                <li><strong>출고 시 최대 높이 복원(초기화) 방법:</strong> 테일게이트를 손으로 끝까지 밀어 올린 상태(최대 개방)에서 닫힘 버튼을 다시 3초간 길게 누르면 원래의 완전 열림 높이로 초기화 복원됩니다.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tip 4 -->
+          <article class="tip-card glass-card card-hover">
+            <div class="tip-badge-num" aria-hidden="true">TIP 04</div>
+            <h3 class="tip-title">기계식 주차타워 수칙 및 일상 보관 습관</h3>
+            <p class="tip-lead">주차 환경과 귀가 후 일상 관리에서 원천 차단하는 생활 수칙</p>
+            <div class="tip-content">
+              <ul>
+                <li><strong>기계식 주차타워 입고 전:</strong> 인포테인먼트에서 <code>[파워 테일게이트]</code> 기능을 완전히 체크 해제(OFF)하여 물리적으로 모터 작동을 차단합니다.</li>
+                <li><strong>433MHz RF 전파 투과 주의:</strong> 아파트나 빌라 실내 소파, 침대, 식탁에서 키가 눌려도 콘크리트 벽과 창문을 뚫고 주차장 차량에 도달합니다.</li>
+                <li><strong>현관 키 트레이 & 전파 차폐 보관:</strong> 귀가 즉시 현관 입구 키 트레이에 보관하거나, 금속 틴케이스 및 차폐 파우치(Faraday bag)에 넣어 보관합니다.</li>
+                <li><strong>0.5초 긴급 비상 정지 룰:</strong> 테일게이트 개방 중 충돌 위험 발견 시, 스마트키의 <strong>아무 버튼</strong>(도어 잠금, 열림, 트렁크, 경적)이나 1회 원터치로 누르면 즉시 작동이 멈춥니다.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Simplified Owner's Manual ("눈높이 차량 설명서") -->
+    <section id="manual" class="section manual-section" aria-labelledby="manual-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-badge badge badge-cyan"><span class="badge-dot"></span>OWNER'S EYE-LEVEL MANUAL</span>
+          <h2 id="manual-heading" class="section-title">투싼 하이브리드(NX4) 눈높이 차량 설명서</h2>
+          <p class="section-subtitle section-desc">
+            두꺼운 취급설명서의 복잡한 공학 용어를 걷어내고, 초보 운전자도 3초 만에 이해하는 핵심 주행·경고등·소모품 완벽 가이드
+          </p>
+        </div>
+
+        <!-- Real-Time Search & Discovery Box -->
+        <div class="manual-search-container no-print">
+          <div class="manual-search-wrapper">
+            <span class="manual-search-icon" aria-hidden="true">🔍</span>
+            <label for="manual-search-input" class="visually-hidden">설명서 내용 실시간 검색</label>
+            <input type="search" id="manual-search-input" class="manual-search-input" placeholder="궁금한 단어를 검색해보세요 (예: 리셋, 자동세차, 냉각수, READY, 패들, 에어컨 필터...)" aria-describedby="manual-search-hint" autocomplete="off">
+            <button type="button" id="manual-search-clear" class="manual-search-clear" aria-label="검색어 지우기" hidden>&times;</button>
+          </div>
+          <div class="manual-search-meta">
+            <span id="manual-search-hint" class="manual-search-hint">실시간 15개 핵심 주제 검색 가능</span>
+            <span id="manual-search-count" class="manual-search-count" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- Category Filter Tabs (WAI-ARIA Tablist) -->
+        <div class="manual-tabs-container no-print">
+          <div id="manual-tabs" class="manual-tabs" role="tablist" aria-label="눈높이 차량 설명서 카테고리">
+            <button type="button" class="manual-tab-btn active" role="tab" id="manual-tab-driving" aria-selected="true" aria-controls="manual-panel-driving" tabindex="0" data-category="driving">
+              <span class="manual-tab-icon" aria-hidden="true">⚡</span> 하이브리드 주행 기초 <span class="manual-tab-count">(5)</span>
+            </button>
+            <button type="button" class="manual-tab-btn" role="tab" id="manual-tab-warnings" aria-selected="false" aria-controls="manual-panel-warnings" tabindex="-1" data-category="warnings">
+              <span class="manual-tab-icon" aria-hidden="true">🚨</span> 핵심 경고등 &amp; 비상 상황 <span class="manual-tab-count">(5)</span>
+            </button>
+            <button type="button" class="manual-tab-btn" role="tab" id="manual-tab-maintenance" aria-selected="false" aria-controls="manual-panel-maintenance" tabindex="-1" data-category="maintenance">
+              <span class="manual-tab-icon" aria-hidden="true">🔧</span> 필수 소모품 &amp; 주기 점검 <span class="manual-tab-count">(5)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab Panels Wrapper -->
+        <div class="manual-content-wrapper">
+
+          <!-- ================================================================== -->
+          <!-- PANEL 1: 하이브리드 주행 기초 (Hybrid Driving Basics) -->
+          <!-- ================================================================== -->
+          <div id="manual-panel-driving" class="manual-panel active" role="tabpanel" aria-labelledby="manual-tab-driving" tabindex="0">
+            <div class="manual-grid grid grid-3-col">
+
+              <!-- Topic 1.1: READY 표시등 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-driving-1" data-category="driving">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge manual-badge-ready"><span class="badge-dot"></span>주행 준비</span>
+                    <span class="badge badge-subtle">READY 표시등</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#01</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">계기판의 초록색 'READY' 불빛의 비밀</h3>
+                  <p class="manual-card-lead">시동 버튼을 눌렀는데 소리가 하나도 안 나요! 고장인가요?</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">엔진 소리가 전혀 나지 않아도 계기판에 <strong>초록색 자동차+열쇠 아이콘(「READY」)</strong>이 켜졌다면 정상적으로 시동이 걸린 상태입니다. 바로 기어를 넣고 출발하시면 됩니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-driving-1" aria-expanded="false" aria-controls="manual-acc-content-driving-1">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-driving-1" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-driving-1" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">내연기관은 스타터 모터가 엔진을 돌려 부르릉 소리가 나지만, 투싼 하이브리드는 <strong>전기 모터로 조용히 먼저 깨어납니다.</strong> 스마트폰 켤 때 소리 안 나는 것처럼 정상적인 대기 상태입니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>브레이크 페달을 깊게 밟습니다.</li>
+                          <li>ENGINE START/STOP 버튼을 한 번 톡 누릅니다.</li>
+                          <li>계기판에 초록색 「READY」 표시등이 켜졌는지 눈으로 확인합니다.</li>
+                          <li>전자식 변속기를 D(주행)단으로 체결하고 부드럽게 출발합니다.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>엔진 소리가 안 난다고 기어를 D단에 둔 채 내리지 마세요 (차가 슬금슬금 굴러가는 무음 크리핑 추돌 위험! 하차 전 반드시 P단 체결 및 시동 OFF).</li>
+                          <li>소리가 안 난다고 시동 버튼을 연속 연타하지 마세요 (릴레이 손상 및 12V 방전 위험).</li>
+                          <li>「READY」 불빛이 뜨지 않은 상태에서 기어를 무리하게 바꾸려 하지 마세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 1.2: EV 모드 개입 조건 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-driving-2" data-category="driving">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-cyan"><span class="badge-dot"></span>EV / 엔진 모드</span>
+                    <span class="badge badge-subtle">연비 &amp; 예열</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#02</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">"왜 엔진만 돌죠?" EV 모드가 안 켜지는 5가지 정상 이유</h3>
+                  <p class="manual-card-lead">하이브리드인데 기름을 계속 써요! 불량 뽑은 건가요?</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">겨울철 실내 난방(히터), 가파른 오르막길, 차가운 엔진 예열, 배터리 충전 부족일 때는 하이브리드 컴퓨터가 스스로 엔진을 켜서 차를 보호합니다. 지극히 정상입니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-driving-2" aria-expanded="false" aria-controls="manual-acc-content-driving-2">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-driving-2" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-driving-2" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">투싼 하이브리드는 엔진의 폐열로 실내 히터를 데웁니다. 겨울철 공조 온도를 22~24도로 설정하면 열원을 위해 엔진이 돌며, 촉매를 데워 매연을 줄이는 초기 1~2분 예열 회전음도 정상입니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>겨울철 공조 온도를 21~22도로 맞추고 시트/핸들 열선을 적극 활용하세요.</li>
+                          <li>배터리 잔량이 2~3칸 이하일 때는 정속 주행하여 충전합니다.</li>
+                          <li>주행 중 가속 페달에서 발을 1초간 살짝 뗐다가 다시 얹으면 엔진이 꺼지고 EV 모드로 진입합니다.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>EV 모드를 고집하겠다고 한겨울에 히터를 완전히 끄고 운전하지 마세요.</li>
+                          <li>차가운 아침 시동 직후 엔진 오일이 순환하기 전에 급가속하지 마세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 1.3: 회생제동 패들쉬프트 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-driving-3" data-category="driving">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-cyan"><span class="badge-dot"></span>회생제동</span>
+                    <span class="badge badge-subtle">패들쉬프트 0~3단계</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#03</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">손끝으로 연비 25km/L 찍는 회생제동 패들쉬프트 200% 활용법</h3>
+                  <p class="manual-card-lead">스포츠카 변속 패들이 하이브리드에서는 '공짜 전기 발전기'?</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">핸들 뒤 패들쉬프트는 감속할 때 충전되는 전기량을 조절하는 스위치입니다. 오른쪽(+)을 1초 꾹 누르면 앞차를 감지해 스스로 감속하는 <strong>스마트 [AUTO] 모드</strong>가 켜집니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-driving-3" aria-expanded="false" aria-controls="manual-acc-content-driving-3">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-driving-3" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-driving-3" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">하이브리드 패들은 기어 단수가 아닌 '회생제동 감속 저항 강도(0~3단계)'를 조절합니다. 왼쪽(-)을 당기면 발전기 저항이 커져 급감속하며 전기가 급속 충전되고, 오른쪽(+)을 당기면 저항이 풀려 활공합니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>오른쪽 패들(+)을 1초간 길게 당겨 스마트 「AUTO」 모드 활성화 (앞차 거리 감지 자동 가감속).</li>
+                          <li>고속도로 평지에서는 오른쪽 패들로 0단계 무저항 활공 주행 유지.</li>
+                          <li>신호 대기 시 왼쪽 패들(-)을 길게 당겨 브레이크 없이 원페달 완전 정차(「STOP」).</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>빗길, 눈길, 빙판길에서는 강한 회생제동(2~3단계 또는 MAX)을 쓰지 마세요 (슬립 미끄러짐 위험).</li>
+                          <li>돌발 급제동 상황에서는 패들만 당기지 말고 물리 브레이크 페달을 힘껏 밟으세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 1.4: 12V 배터리 리셋 버튼 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-driving-4" data-category="driving">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-amber"><span class="badge-dot"></span>비상 구원</span>
+                    <span class="badge badge-subtle">12V BATT RESET</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#04</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">방전 시 보험 부르지 마세요! '12V 배터리 리셋' 버튼 15초 탈출법</h3>
+                  <p class="manual-card-lead">보닛 열고 점프선 연결? NO! 운전석 무릎 앞 버튼 하나로 15초 만에 셀프 부활</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">투싼 하이브리드는 보닛에 납 배터리가 없습니다! 방전되어 문이 안 열릴 때, 운전석 무릎 앞 <strong>「12V BATT RESET」</strong> 버튼을 누르고 <strong>15초 안에</strong> 시동을 걸면 즉시 살아납니다.</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-driving-4" aria-expanded="false" aria-controls="manual-acc-content-driving-4">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-driving-4" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-driving-4" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">고전압 배터리 팩 안에 초경량 12V 리튬 배터리가 통합되어 있습니다. 방전 위기 시 보호 릴레이가 차단된 것이며, 리셋 버튼을 누르면 메인 고전압 배터리가 12V 배터리에 비상 자체 점프를 인가합니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>스마트키에서 비상 쇠키를 뽑아 운전석 도어를 엽니다.</li>
+                          <li>운전석 무릎 앞 버튼 모음에서 [12V BATT RESET] 버튼을 1회 누릅니다.</li>
+                          <li>⏱️ 15초 이내에 브레이크 페달을 밟고 시동 버튼을 누릅니다(「READY」 점등 확인).</li>
+                          <li>시동 후 최소 30분 이상 주행하여 12V 배터리를 완전히 충전합니다.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>내 차로 다른 방전된 일반 차에 점프선을 연결해주지 마세요 (역점프 시 상대 차 시동 모터의 과전류로 투싼의 LDC 전장 회로가 파손됩니다).</li>
+                          <li>사설 렉카의 24V 대형 부스터 전원을 절대로 연결하지 마세요.</li>
+                          <li>시동이 걸리자마자 바로 시동을 끄지 마세요 (충전이 안 되어 즉시 재방전됩니다).</li>
+                          <li>버튼을 누른 후 15초 제한 시간을 넘겨 멍하니 지체하지 마세요 (릴레이 재차단됨).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 1.5: 관성 주행 & 발끝 신공 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-driving-5" data-category="driving">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-cyan"><span class="badge-dot"></span>실전 연비</span>
+                    <span class="badge badge-subtle">글라이딩 테크닉</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#05</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">공인 연비 25km/L 찍는 발끝 신공: 관성 주행과 탄력 주행</h3>
+                  <p class="manual-card-lead">남들은 17km/L 나오는데, 고수들은 어떻게 23~26km/L를 찍을까?</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">목표 속도까지 시원하게 가속한 뒤, 가속 페달을 살짝 뗐다가 1/4 깊이로 살포시 얹어주는 <strong>'발끝 털기(글라이딩)'</strong>만 익히면 연비가 30% 급상승합니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-driving-5" aria-expanded="false" aria-controls="manual-acc-content-driving-5">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-driving-5" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-driving-5" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">1.7톤 중형 SUV를 너무 소심하게 출발시키면 모터 배터리가 금방 바닥나 엔진이 오래 돌게 됩니다. 오히려 목표 속도에 시원하게 도달한 뒤 발을 떼 엔진을 끄고 EV로 미끄러지는 것이 고수들의 연비 비법입니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>[1박자 가속]: ECO 구간 70~80%로 경쾌하게 목표 속도(50~60km/h) 도달.</li>
+                          <li>[2박자 발끝 털기]: 가속 페달에서 발을 1초간 완전히 뗌 (엔진 정지 유도).</li>
+                          <li>[3박자 EV 글라이딩]: 초록색 「EV」 확인 후 페달에 1/4 깊이로 살포시 얹어 속도 유지.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>앞차에 바짝 붙어 급가속과 급브레이크를 반복하지 마세요 (회생제동 회수 손실).</li>
+                          <li>가파른 긴 언덕 오르막길에서 억지로 EV 모드를 고집하지 마세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- ================================================================== -->
+          <!-- PANEL 2: 핵심 경고등 & 비상 상황 (Warning Lights & Emergency Guide) -->
+          <!-- ================================================================== -->
+          <div id="manual-panel-warnings" class="manual-panel" role="tabpanel" aria-labelledby="manual-tab-warnings" tabindex="0" hidden>
+            <div class="manual-grid grid grid-3-col">
+
+              <!-- Topic 2.1: HEV 경고등 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-warnings-1" data-category="warnings">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-amber"><span class="badge-dot"></span>시스템 경고</span>
+                    <span class="badge badge-subtle">HEV 경고등</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#06</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">계기판 주황색 '하이브리드 시스템 경고등' 떴을 때 3초 대처법</h3>
+                  <p class="manual-card-lead">노란색 스패너(🔧) 또는 삼각형 느낌표 아이콘(⚠️/🚗!)? 지금 차가 멈추는 건가요?</p>
+                  <div class="manual-block manual-summary callout callout-warning">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">경고등이 <strong>주황색(노란색)이면 '안전하게 서행하여 점검'</strong>, <strong>빨간색이면 '즉시 비상등 켜고 안전한 갓길 정차'</strong>입니다. 당황하지 말고 메시지를 먼저 읽으세요!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-warnings-1" aria-expanded="false" aria-controls="manual-acc-content-warnings-1">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-warnings-1" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-warnings-1" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">계기판에 <strong>노란색 스패너(🔧) 또는 삼각형 느낌표 아이콘(⚠️/🚗!)</strong>으로 표시되는 하이브리드 시스템 경고등은 센서 일시 오차나 냉각팬 이물질 등으로 점등될 수 있습니다. 엔진 동력으로 서행 주행이 가능하도록 보호 모드가 작동하므로 당황하지 마세요.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>계기판 팝업 안내 메시지 확인 ("안전한 곳에 정차하십시오" vs "하이브리드 시스템을 점검하십시오").</li>
+                          <li>안전지대에 P단 주차 후 시동을 끄고 차 문을 잠근 채 5~10분 대기 후 재시동 (컴퓨터 리셋).</li>
+                          <li>지속 점등 시 실내 SOS 버튼이나 블루링크 긴급출동(1899-0600)으로 원격 차량 진단을 요청하세요.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>경고등 점등 상태에서 고속도로 100km/h 이상 고속 주행을 지속하지 마세요.</li>
+                          <li>사제 OBD 단말기로 고장 코드를 임의 삭제하지 마세요 (정밀 진단 불가).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 2.2: 자동세차 N단 유지 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-warnings-2" data-category="warnings">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-cyan"><span class="badge-dot"></span>자동세차</span>
+                    <span class="badge badge-subtle">전자식 변속기 N단</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#07</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">기계식 자동세차 들어갈 때 중립(N단) 유지 꿀팁</h3>
+                  <p class="manual-card-lead">시동 껐더니 P단으로 저절로 잠겨서 레일 파손? 1초 만에 N단 고정하는 법</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">공식 명칭은 <strong>「시동을 끈 후 N단 유지 모드」</strong>입니다. 오토홀드를 끄고 N단 상태에서 <strong>OK 버튼을 1초간 누르면 시동을 끈 후에도 N단이 유지되어 터널식 세차장이나 중립 주차 시 P단으로 자동 잠기는 것을 방지합니다 (세차가 끝날 때까지 절대 문을 열지 마세요).</strong></p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-warnings-2" aria-expanded="false" aria-controls="manual-acc-content-warnings-2">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-warnings-2" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-warnings-2" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">전자식 변속기(SBW)는 안전을 위해 시동을 끄거나 도어를 열면 무조건 P단으로 잠기는 안전 로직이 내장되어 있습니다. 공식 <strong>「시동을 끈 후 N단 유지 모드」</strong>를 활성화하면 터널식 세차장이나 아파트 이중 주차 시 시동을 꺼도 P단으로 자동 잠기지 않습니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>진입 전 센터콘솔의 [AUTO HOLD] 버튼을 눌러 소등(OFF)합니다.</li>
+                          <li>레일에 바퀴를 올리고 브레이크를 밟은 채 변속기를 N단으로 변경합니다.</li>
+                          <li>계기판에 「N단 유지 모드: 핸들의 OK 버튼을 길게 누르십시오」 확인.</li>
+                          <li>핸들 우측의 [OK] 버튼을 1초 이상 꾹 누릅니다 (「시동을 끈 후 N단이 유지됩니다」 문구 확인).</li>
+                          <li>브레이크에서 발을 뗍니다. 세차장 안내에 따라 시동을 켠 상태로 진행하거나 시동을 꺼도 N단이 안전하게 유지됩니다.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>N단 유지 설정을 하지 않은 채 시동을 끄거나 자리를 비우지 마세요 (P단 자동 체결 사고).</li>
+                          <li>세차 중 운전석 문을 열지 마세요 (안전 로직으로 P단 강제 잠금).</li>
+                          <li>와이퍼 레버를 'AUTO' 상태로 두지 마세요 (반드시 'OFF'로 설정).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 2.3: 냉각수 과열 & 구분 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-warnings-3" data-category="warnings">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-red"><span class="badge-dot"></span>냉각수 과열</span>
+                    <span class="badge badge-subtle">분홍 vs 파랑</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#08</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">분홍색 vs 파란색! 인버터 냉각수와 엔진 냉각수 경고 대처</h3>
+                  <p class="manual-card-lead">보닛을 열었더니 물통이 2개? 수돗물 함부로 부으면 200만 원 견적 나옵니다!</p>
+                  <div class="manual-block manual-summary callout callout-danger">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">보닛 안 <strong>분홍색은 '엔진용 일반 냉각수'</strong>, <strong>파란색은 전기가 안 통하는 '인버터 전용 절연 냉각수'</strong>입니다. 절대로 파란색 통에 수돗물이나 일반 부동액을 섞지 마세요!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-warnings-3" aria-expanded="false" aria-controls="manual-acc-content-warnings-3">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-warnings-3" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-warnings-3" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">하이브리드는 엔진뿐 아니라 수백 볼트 전기가 흐르는 인버터도 식혀야 합니다. 파란색 냉각수는 누전 화재를 방지하기 위해 이온을 제거한 특수 절연액이므로 물이 섞이면 안 됩니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>시동을 끄고 엔진을 30분 이상 충분히 식힙니다 (화상 주의).</li>
+                          <li>보닛을 열고 양쪽 보조 탱크 수위가 MIN과 MAX 사이에 있는지 확인합니다.</li>
+                          <li>분홍색(엔진) 부족 시 비상 수돗물/순정 부동액 보충 가능.</li>
+                          <li>파란색(인버터) 부족 시 직접 붓지 말고 블루링크(1899-0600) 견인 후 블루핸즈 입고.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>파란색 인버터 탱크에 수돗물, 생수, 지하수를 단 한 방울도 붓지 마세요 (누전 화재 및 보증 취소).</li>
+                          <li>분홍색과 파란색 냉각수를 서로 혼유하여 섞지 마세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 2.4: 거북이 출력 제한 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-warnings-4" data-category="warnings">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-amber"><span class="badge-dot"></span>안전 보호</span>
+                    <span class="badge badge-subtle">거북이 🐢 표시등</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#09</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">계기판에 귀여운 '거북이(🐢 출력 제한)' 표시등이 떴어요!</h3>
+                  <p class="manual-card-lead">거북이 모양 불이 켜지고 엑셀을 밟아도 차가 40km/h로 기어가요! 고장인가요?</p>
+                  <div class="manual-block manual-summary callout callout-warning">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">거북이 표시등은 고장이 아니라, <strong>배터리가 너무 춥거나 뜨거울 때, 또는 배터리가 바닥났을 때 고장을 막으려고 차가 스스로 출력을 부드럽게 낮춘 '안전 보호 모드'</strong>입니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-warnings-4" aria-expanded="false" aria-controls="manual-acc-content-warnings-4">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-warnings-4" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-warnings-4" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">스마트폰이 폭염이나 혹한에 화면 밝기를 낮추며 스스로를 보호하듯, 고전압 배터리 온도가 비정상적이거나 긴 언덕길 등판으로 잔량이 바닥났을 때 시스템 보호를 위해 잠시 쉬어가는 것입니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>가장 우측 차선으로 이동하여 교통 흐름에 맞춰 서행하세요.</li>
+                          <li>완만한 평지에서 정속 주행을 유지하면 엔진이 천천히 배터리를 재충전합니다.</li>
+                          <li>배터리가 충전되거나 적정 온도에 도달하면 거북이 표시등이 저절로 사라집니다.</li>
+                          <li>조수석 아래 배터리 통풍구가 짐으로 막혀있지 않은지 확인하세요.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>차가 안 나간다고 가속 페달을 바닥까지 쾅쾅 무리하게 밟지 마세요.</li>
+                          <li>갓길에서 시동을 껐다 켰다 반복하지 마세요 (방전 위험).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 2.5: 스마트키 방전 비상 시동 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-warnings-5" data-category="warnings">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-cyan"><span class="badge-dot"></span>비상 시동</span>
+                    <span class="badge badge-subtle">RFID 직접 접촉</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#10</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">스마트키 배터리 방전 시 문 열고 시동 거는 법</h3>
+                  <p class="manual-card-lead">리모컨 버튼을 눌러도 깜깜무소식! 택시 부르지 말고 30초 만에 시동 거는 2단계</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">스마트키에서 쇠키(비상키)를 뽑아 손잡이 밑 홈을 찔러 캡을 벗겨 문을 열고, <strong>방전된 스마트키 본체로 시동 버튼 정중앙을 '꾹' 누르면</strong> 시동이 걸립니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-warnings-5" aria-expanded="false" aria-controls="manual-acc-content-warnings-5">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-warnings-5" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-warnings-5" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">스마트키 안에는 교통카드와 같은 무전원 RFID 칩이 내장되어 있습니다. 스마트키를 시동 버튼에 직접 대면 전자기 유도로 암호를 읽어내어 즉시 시동이 걸리고 도난 경보음도 꺼집니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>스마트키에서 비상키를 분리하고 도어 손잡이 밑 네모난 홈을 찔러 플라스틱 캡을 벗깁니다.</li>
+                          <li>열쇠로 문을 열고 탑승 후 브레이크 페달을 깊게 밟습니다.</li>
+                          <li>스마트키 본체로 엔진 시동 버튼의 정중앙을 직접 꾹 누릅니다 (경보 해제 &amp; 「READY」 점등).</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>경보음이 울린다고 당황해서 차 밖으로 도망치지 마세요 (시동 즉시 해제).</li>
+                          <li>스마트폰이나 일반 쇠붙이로 버튼을 누르지 마세요 (순정 스마트키만 인식).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- ================================================================== -->
+          <!-- PANEL 3: 필수 소모품 & 주기 점검 (Essential Maintenance & Inspection) -->
+          <!-- ================================================================== -->
+          <div id="manual-panel-maintenance" class="manual-panel" role="tabpanel" aria-labelledby="manual-tab-maintenance" tabindex="0" hidden>
+            <div class="manual-grid grid grid-3-col">
+
+              <!-- Topic 3.1: 저점도 엔진오일 규격 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-maint-1" data-category="maintenance">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-cyan"><span class="badge-dot"></span>엔진 오일</span>
+                    <span class="badge badge-subtle">0W-16 / 0W-20</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#11</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">0W-16 / 0W-20 초저점도 엔진오일의 중요성</h3>
+                  <p class="manual-card-lead">카센터에서 일반 5W-30 광유 넣어도 된다는데, 정말 괜찮을까요?</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">하이브리드는 주행 중 엔진이 수시로 꺼졌다 켜지므로, 0.1초 만에 엔진 구석구석을 적셔주는 <strong>초저점도(0W-16/0W-20) 정품 합성 엔진오일</strong>이 필수입니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-maint-1" aria-expanded="false" aria-controls="manual-acc-content-maint-1">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-maint-1" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-maint-1" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">하이브리드는 1분에 서너 번씩 시동이 켜졌다 꺼집니다. 오일이 뻑뻑하면 켜질 때마다 금속 마모가 극심해집니다. 물처럼 찰랑이는 저점도 규격(API SP / ILSAC GF-6)을 써야 마모를 막고 공인 연비가 나옵니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>정비소 방문 시 "투싼 하이브리드 순정 규격인 0W-16(또는 0W-20) 합성유로 넣어주세요"라고 명확히 요청.</li>
+                          <li>교환 주기: 현대차 공식 매뉴얼 기준 통상 조건 10,000km/12개월, 시내 단거리·정체 가혹 조건 <strong>5,000km/6개월</strong>마다 교환.</li>
+                          <li>교환 후 평지에서 오일 게이지를 뽑아 F선과 L선 사이 70~80% 확인.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>몇 만 원 아끼겠다고 5W-30, 10W-40 등 뻑뻑한 고점도 오일을 넣지 마세요 (연비 하락 및 마모).</li>
+                          <li>교환 주기를 15,000km 이상 무작정 넘기지 마세요 (엔진 내 수분 응축 위험).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 3.2: 절연 냉각수 수돗물 절대 금지 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-maint-2" data-category="maintenance">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-red"><span class="badge-dot"></span>절대 금지</span>
+                    <span class="badge badge-subtle">인버터 절연 냉각수</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#12</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">파란색 절연 냉각수에 수돗물 절대 금지 수칙</h3>
+                  <p class="manual-card-lead">예전 차는 냉각수 모자라면 수돗물 부었는데, 투싼 하이브리드는 왜 절대 안 될까?</p>
+                  <div class="manual-block manual-summary callout callout-danger">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">전기 모터와 배터리를 식히는 파란색 냉각수는 전기가 안 통하는 특수 액체입니다. <strong>수돗물이나 지하수를 타면 전기가 통해 쇼트(누전)가 발생하고 보증 수리가 영구 박탈</strong>됩니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-maint-2" aria-expanded="false" aria-controls="manual-acc-content-maint-2">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-maint-2" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-maint-2" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">파란색 냉각수(저전도 절연 냉각수 BSA-401)는 수백 볼트 인버터 속을 직접 순환합니다. 물속 미네랄과 전해질이 닿는 순간 도체로 변해 누전 센서가 작동하고 전기 화재를 유발합니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>"인버터 냉각수를 점검하십시오" 경고 시 안전지대로 이동.</li>
+                          <li>보닛을 열고 파란색 보조 탱크 수위 확인 (MIN 이하 여부).</li>
+                          <li>물을 타지 않은 현대 순정 완제품으로만 보충해야 하므로 블루링크(1899-0600) 견인으로 블루핸즈 입고.</li>
+                          <li>최초 교환 주기는 200,000km 또는 10년이므로 평소 누유만 없으면 안심입니다.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>생수, 지하수, 수돗물을 파란색 통에 단 한 방울도 붓지 마세요 (200만~500만 원 자비 부담).</li>
+                          <li>일반 초록색/분홍색 사제 부동액을 절대로 혼유하지 마세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 3.3: 에어컨 필터 5분 DIY -->
+              <article class="manual-card glass-card card-hover" id="manual-card-maint-3" data-category="maintenance">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-emerald"><span class="badge-dot"></span>DIY 셀프</span>
+                    <span class="badge badge-subtle">에어컨 필터 교체</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#13</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">공임 3만 원 아끼는 에어컨 필터 5분 셀프 교체법</h3>
+                  <p class="manual-card-lead">공구 0개! 손가락만 있으면 누구나 5분 만에 끝내는 글러브박스 분해 순서</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">조수석 글러브박스 양쪽 둥근 핀을 손으로 돌려 빼고, 오른쪽 걸쇠를 당긴 뒤 커버를 열어 헌 필터를 빼고 <strong>새 에어컨 필터(캐빈 필터)</strong>를 넣으면 끝납니다!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-maint-3" aria-expanded="false" aria-controls="manual-acc-content-maint-3">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-maint-3" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-maint-3" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">투싼 하이브리드의 에어컨 필터 교체에는 공구가 1개도 필요 없습니다. 인터넷에서 5천~1만 원대 필터를 구입해 직접 갈면 공임 3만 원을 아끼고 매 계절마다 깨끗한 실내 공기를 누릴 수 있습니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>조수석 글러브박스 소지품을 비웁니다.</li>
+                          <li>안쪽 좌우 둥근 핀을 반시계 방향 90도 돌려 바깥으로 뽑아냅니다.</li>
+                          <li>오른쪽 바깥 댐퍼 지지대 끝을 손가락으로 가볍게 밀어 분리합니다.</li>
+                          <li>필터 덮개 오른쪽 클립을 위아래로 꼬집어 당겨 분리합니다.</li>
+                          <li>새 필터의 화살표(↓ AIR FLOW)가 아래를 향하도록 삽입하고 역순 조립합니다.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>필터의 공기 흐름 화살표(AIR FLOW ↓)를 위쪽으로 거꾸로 꽂지 마세요 (소음 발생 및 여과 저하).</li>
+                          <li>오른쪽 댐퍼 걸쇠를 억지로 힘으로 잡아당겨 부러뜨리지 마세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 3.4: 브레이크 패드 수명 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-maint-4" data-category="maintenance">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-emerald"><span class="badge-dot"></span>회생제동 축복</span>
+                    <span class="badge badge-subtle">브레이크 패드 수명</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#14</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">10만 km 타도 멀쩡한 브레이크 패드 &amp; 필수 점검</h3>
+                  <p class="manual-card-lead">하이브리드는 브레이크 패드가 왜 안 닳을까? 대신 꼭 챙겨야 할 숨은 점검 1가지</p>
+                  <div class="manual-block manual-summary callout callout-info">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">감속할 때 바퀴를 긁는 대신 전기 모터가 발전기로 변해 차를 세워주기 때문에 브레이크 패드가 일반 차보다 3배 오래갑니다. 대신 <strong>'브레이크액 수분도'</strong>는 2년마다 꼭 점검하세요!</p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-maint-4" aria-expanded="false" aria-controls="manual-acc-content-maint-4">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-maint-4" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-maint-4" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">감속 에너지의 80~90%를 전기 모터가 흡수하며 배터리를 충전하기 때문에 실제 물리 브레이크 패드는 완전 정차 직전에만 개입합니다. 10만 km를 타도 패드가 멀쩡한 것은 하이브리드만의 경제적 축복입니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>디스크 녹 제거 (클린 브레이킹): 패들 회생제동 0단계에서 브레이크를 지그시 밟아 마찰로 녹을 털어내세요.</li>
+                          <li>브레이크액(DOT-4) 수분도 점검: 매 40,000km 또는 2년마다 정비소에서 수분도 3% 미만인지 확인하세요.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>패드가 안 닳는다고 브레이크액 점검을 아예 잊고 방치하지 마세요 (베이퍼 록 위험).</li>
+                          <li>브레이크 밟을 때 '지잉-' 전자식 모터 소리가 난다고 놀라지 마세요 (정상 작동음).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Topic 3.5: 조수석 배터리 숨구멍 관리 -->
+              <article class="manual-card glass-card card-hover" id="manual-card-maint-5" data-category="maintenance">
+                <div class="manual-card-header">
+                  <div class="manual-badges">
+                    <span class="badge badge-amber"><span class="badge-dot"></span>과열 방지</span>
+                    <span class="badge badge-subtle">배터리 통풍구</span>
+                  </div>
+                  <span class="manual-card-num" aria-hidden="true">#15</span>
+                </div>
+                <div class="manual-card-body">
+                  <h3 class="manual-card-title">조수석 아래 고전압 배터리 숨구멍 관리 수칙</h3>
+                  <p class="manual-card-lead">조수석 바닥에 짐과 방석을 가득 쌓아두면 하이브리드 연비가 뚝 떨어지는 이유</p>
+                  <div class="manual-block manual-summary callout callout-warning">
+                    <div class="manual-block-title">💡 한 줄 핵심 요약</div>
+                    <p class="manual-block-text">동승석(조수석) 시트 하단과 2열 시트 아래에는 대용량 배터리가 숨 쉬는 공기 흡입구가 있습니다. <strong>두꺼운 매트나 짐, 담요로 막으면 배터리가 과열되어 연비가 폭망하고 출력이 떨어집니다!</strong></p>
+                  </div>
+                  <div class="manual-accordion">
+                    <button type="button" class="manual-accordion-btn" id="manual-acc-btn-maint-5" aria-expanded="false" aria-controls="manual-acc-content-maint-5">
+                      <span class="manual-accordion-label">상세 해설 &amp; 실전 수칙 보기</span>
+                      <span class="manual-accordion-icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div id="manual-acc-content-maint-5" class="manual-accordion-content" role="region" aria-labelledby="manual-acc-btn-maint-5" hidden>
+                      <div class="manual-block manual-faq">
+                        <div class="manual-block-title">🤔 운전자들이 가장 많이 묻는 질문</div>
+                        <p class="manual-block-text">투싼 하이브리드 배터리는 실내 공기를 빨아들여 식히는 공랭식입니다. 숨구멍을 짐가방이나 두꺼운 매트로 덮으면 배터리 온도가 50℃ 이상 치솟아 EV 모드가 꺼지고 냉각팬이 풀가동되어 연비가 급락합니다.</p>
+                      </div>
+                      <div class="manual-block manual-steps">
+                        <div class="manual-block-title">🛠️ 당장 이렇게 하세요</div>
+                        <ol class="manual-steps-list">
+                          <li>동승석 시트 하단 프레임에 위치한 플라스틱 통풍 그릴 위치를 직접 확인하세요.</li>
+                          <li>그릴 앞 최소 10cm 반경에는 짐이나 비닐봉지를 두지 마세요.</li>
+                          <li>반려동물 털이나 먼지가 쌓였다면 세차할 때 청소기로 표면 먼지를 빨아들이세요.</li>
+                        </ol>
+                      </div>
+                      <div class="manual-block manual-donts callout callout-danger">
+                        <div class="manual-block-title">⚠️ 절대 하지 말아야 할 것</div>
+                        <ul class="manual-donts-list">
+                          <li>통풍구 그릴에 물, 음료수, 액체 탈취제를 절대로 뿌리지 마세요 (고전압 쇼트 화재 위험).</li>
+                          <li>사제 바닥 매트를 깔 때 배터리 통풍구를 덮어버리지 않는지 반드시 확인하세요.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Empty Search State -->
+          <div id="manual-empty-state" class="manual-empty-state" hidden>
+            <div class="manual-empty-icon" aria-hidden="true">🧐</div>
+            <p class="manual-empty-text">일치하는 설명서 검색 결과가 없습니다. 다른 검색어를 입력해보세요.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Advanced Tips & Hidden Features (M3 Implementation) -->
+    <section id="secrets" class="section secrets-section" aria-labelledby="secrets-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">ADVANCED TIPS &amp; SECRETS</span>
+          <h2 id="secrets-heading" class="section-title">투싼 하이브리드 고급 꿀팁 &amp; 숨은 기능</h2>
+          <p class="section-subtitle section-desc">
+            매뉴얼 깊숙이 숨겨진 비상 대처 기능부터 공인연비를 20% 끌어올리는 하이브리드 주행 테크닉, 차주 필수 검증 용품까지 총망라
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="secrets-controls secrets-filter-tabs secrets-filter-bar no-print" role="tablist" aria-label="고급 꿀팁 카테고리 필터">
+          <button type="button" class="secrets-filter-btn secrets-tab-btn active" role="tab" id="filter-tab-all" aria-selected="true" aria-controls="secrets-grid" tabindex="0" data-filter="all">
+            전체 보기 <span class="filter-count">13</span>
+          </button>
+          <button type="button" class="secrets-filter-btn secrets-tab-btn" role="tab" id="filter-tab-hidden" aria-selected="false" aria-controls="secrets-grid" tabindex="-1" data-filter="hidden">
+            차량 숨은 기능 <span class="filter-count">5</span>
+          </button>
+          <button type="button" class="secrets-filter-btn secrets-tab-btn" role="tab" id="filter-tab-hybrid" aria-selected="false" aria-controls="secrets-grid" tabindex="-1" data-filter="hybrid">
+            하이브리드 연비 <span class="filter-count">3</span>
+          </button>
+          <button type="button" class="secrets-filter-btn secrets-tab-btn" role="tab" id="filter-tab-accessory" aria-selected="false" aria-controls="secrets-grid" tabindex="-1" data-filter="accessory">
+            추천 용품 <span class="filter-count">5</span>
+          </button>
+        </div>
+
+        <!-- Pre-rendered Grid of 13 Advanced Secret Cards -->
+        <div id="secrets-grid" class="secrets-grid grid grid-2-col" role="region" aria-label="투싼 하이브리드 숨은 기능 및 꿀팁 카드 목록">
+
+          <!-- Card 1: 12V BATT RESET -->
+          <article class="secret-card glass-card card-hover" data-category="hidden" id="secret-batt-reset">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-cyan"><span class="badge-dot"></span>차량 숨은 기능</span>
+                <span class="secret-badge badge badge-subtle">긴급 방전 탈출</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#01</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">12V 배터리 리셋 버튼 (12V BATT RESET)</h3>
+              <p class="secret-summary">
+                2열 시트 하부 고전압 배터리에 통합된 12V 리튬 배터리가 블랙박스 등으로 방전 위험 시 BMS 보호 릴레이가 작동합니다. 점프선 없이 자체 전력으로 긴급 자가 시동하는 핵심 기능입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">실전 시동 3단계 절차:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> 운전석 좌측 크래시패드 스위치 뱅크에서 <code>12V BATT RESET</code> 버튼을 1회 누릅니다.</li>
+                  <li><span class="step-num">2</span> <strong>골든 타임 15초:</strong> 15초 이내에 브레이크 페달을 밟고 <code>ENGINE START</code> 버튼을 눌러 계기판 초록색 <strong>READY</strong> 등을 켭니다.</li>
+                  <li><span class="step-num">3</span> <strong>LDC 충전 수칙:</strong> 시동 직후 바로 끄지 말고 <strong>최소 30분 이상 주행 또는 READY 상태를 유지</strong>하여 12V 배터리를 완충합니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-warning">
+                <span class="callout-icon" aria-hidden="true">⚠️</span>
+                <div class="callout-text">
+                  <strong>주의:</strong> 15초 초과 시 BMS 릴레이가 다시 차단됩니다. 실패 시 리셋 버튼을 다시 누르고 15초 이내에 브레이크와 시동 버튼을 즉시 조작하세요.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="batt-reset" aria-pressed="false" aria-label="12V 배터리 리셋 꿀팁 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Wiper Service Mode -->
+          <article class="secret-card glass-card card-hover" data-category="hidden" id="secret-wiper-service">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-cyan"><span class="badge-dot"></span>차량 숨은 기능</span>
+                <span class="secret-badge badge badge-subtle">본넷 도장 보호</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#02</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">히든 와이퍼 교체/세차 서비스 모드</h3>
+              <p class="secret-summary">
+                투싼 NX4는 공기역학 개선을 위해 와이퍼 암이 본넷 후드 안쪽에 숨겨져 있습니다. 강제로 들어 올리면 본넷 끝단 도장면이 찍혀 영구 부식이 발생하므로 전용 서비스 모드를 사용해야 합니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">와이퍼 서비스 모드 조작법:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> 차량 시동(IGNITION)을 완전히 끕니다 (OFF).</li>
+                  <li><span class="step-num">2</span> <strong>20초 골든타임:</strong> 시동 OFF 후 20초 이내에 와이퍼 레버를 위쪽(<code>MIST</code> 방향)으로 2초 이상 밀어 올립니다.</li>
+                  <li><span class="step-num">3</span> 와이퍼가 앞유리 양옆 90도 수직 위치로 올라와 멈추면 안전하게 세차하거나 블레이드를 교체합니다.</li>
+                  <li><span class="step-num">4</span> <strong>원위치 복귀:</strong> 와이퍼 암을 완전히 유리면에 밀착시킨 후, 시동을 켜고 레버를 1회 톡 치면 정상 위치로 내려옵니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-warning">
+                <span class="callout-icon" aria-hidden="true">⚠️</span>
+                <div class="callout-text">
+                  <strong>경고:</strong> 와이퍼 암을 유리면에 밀착시키지 않은 채 레버를 조작하면 와이퍼가 앞유리를 강타하여 유리가 파손될 수 있습니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="wiper-service" aria-pressed="false" aria-label="와이퍼 서비스 모드 꿀팁 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Emergency Mechanical Key & Limp-home -->
+          <article class="secret-card glass-card card-hover" data-category="hidden" id="secret-mech-key">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-cyan"><span class="badge-dot"></span>차량 숨은 기능</span>
+                <span class="secret-badge badge badge-subtle">비상 탈출/시동</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#03</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">비상 기계식 키 및 도어 커버 탈거 &amp; 림프홈 시동</h3>
+              <p class="secret-summary">
+                스마트키 배터리가 방전되었거나 차량 12V 전원이 차단되었을 때 물리적 키로 운전석 도어를 열고, 스마트키 배터리 없이 엔진 시동을 거는 비상 대응법입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">비상 탈출 및 시동 절차:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> 스마트키에서 비상 기계식 키 블레이드를 분리합니다.</li>
+                  <li><span class="step-num">2</span> 운전석 도어 핸들을 바깥쪽으로 당긴 상태를 유지합니다.</li>
+                  <li><span class="step-num">3</span> 키 실린더 캡 하단의 사각 릴리즈 홀에 비상키를 수직으로 밀어 넣어 고정 탭을 풀고 커버를 탈거합니다.</li>
+                  <li><span class="step-num">4</span> 노출된 키 홀에 키를 꽂아 문을 연 후, <strong>스마트키 본체 모서리로 엔진 스타트 버튼을 직접 꾹 누르면</strong> RFID 유도 전류로 시동(READY)이 걸립니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-info">
+                <span class="callout-icon" aria-hidden="true">💡</span>
+                <div class="callout-text">
+                  <strong>림프홈 원리:</strong> 스마트키 내부 수동 RFID 칩은 배터리가 없어도 시동 버튼 코일의 전자기 유도 전류로 인증 신호를 전송합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="mech-key" aria-pressed="false" aria-label="비상 기계식 키 꿀팁 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4: Auto Defog Quick Toggle -->
+          <article class="secret-card glass-card card-hover" data-category="hidden" id="secret-auto-defog">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-cyan"><span class="badge-dot"></span>차량 숨은 기능</span>
+                <span class="secret-badge badge badge-subtle">공조/연비 절감</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#04</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">오토 디포그(ADS) 하드웨어 간편 토글</h3>
+              <p class="secret-summary">
+                앞유리 습기를 감지해 에어컨을 강제 작동시키는 오토 디포그 기능이 실내를 춥게 하거나 연비를 떨어뜨릴 때, 복잡한 인포테인먼트 화면 탐색 없이 물리 버튼으로 3초 만에 끄고 켭니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">하드웨어 단축 조작법:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> 공조기 패널의 <code>FRONT(앞유리 김서림 제거)</code> 버튼을 <strong>3초간 길게 누릅니다</strong>.</li>
+                  <li><span class="step-num">2</span> 공조 LCD 화면 또는 계기판의 ADS 아이콘이 깜빡이며 토글됩니다. (3회 깜빡임: 기능 해제 / 6회 깜빡임: 기능 설정).</li>
+                  <li><span class="step-num">3</span> <strong>대안 단축키:</strong> FRONT 버튼을 누른 채 <code>A/C</code> 버튼을 3초 이내에 5회 연속 눌러도 설정이 전환됩니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-success">
+                <span class="callout-icon" aria-hidden="true">🌿</span>
+                <div class="callout-text">
+                  <strong>연비 효과:</strong> 맑은 날 불필요한 컴프레서 개입을 원천 차단하여 봄/가을철 주행 연비를 5~8% 개선합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="auto-defog" aria-pressed="false" aria-label="오토 디포그 토글 꿀팁 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 5: Double Parking Neutral Shift Lock -->
+          <article class="secret-card glass-card card-hover" data-category="hidden" id="secret-neutral-shift">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-cyan"><span class="badge-dot"></span>차량 숨은 기능</span>
+                <span class="secret-badge badge badge-subtle">주차 수칙</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#05</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">아파트 이중주차 N단(중립) 유지법</h3>
+              <p class="secret-summary">
+                전자식 변속기는 시동을 끄면 P단으로 자동 잠깁니다. 아파트 지하주차장 등에서 다른 차량 통행을 위해 바퀴가 굴러가도록 N단으로 체결을 유지하는 차종별 정확한 수칙입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">변속기 타입별 체결 단계:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>사전 필수:</strong> 오토홀드(Auto Hold)를 끄고, 브레이크를 밟은 채 전자식 주차 브레이크(EPB)를 아래로 밀어 해제합니다.</li>
+                  <li><span class="step-num">2</span> <strong>버튼식 변속기(전기형):</strong> 시동 ON(P) → 브레이크 밟고 시동 OFF → 3분 이내 브레이크 밟은 채 <code>N</code> 버튼을 1초 이상 길게 누름.</li>
+                  <li><span class="step-num">3</span> <strong>칼럼식 변속기(페이스리프트):</strong> 시동 OFF 후 브레이크 밟고 칼럼 레버를 <code>N</code> 방향으로 1초 이상 비틀어 유지.</li>
+                  <li><span class="step-num">4</span> 계기판에 "N단 체결 완료" 알림 문구가 뜨는지 반드시 확인합니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-warning">
+                <span class="callout-icon" aria-hidden="true">⚠️</span>
+                <div class="callout-text">
+                  <strong>경고:</strong> 경사로 주차 금지! 평지에서만 체결해야 하며, EPB가 체결되어 있으면 바퀴가 굴러가지 않아 타 차량 견인 파손 사고가 발생합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="neutral-shift" aria-pressed="false" aria-label="이중주차 N단 유지 꿀팁 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 6: Pulse & Glide (P&G) -->
+          <article class="secret-card glass-card card-hover" data-category="hybrid" id="secret-pulse-glide">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-emerald"><span class="badge-dot"></span>하이브리드 연비</span>
+                <span class="secret-badge badge badge-subtle">주행 테크닉</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#06</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">EV 글라이드 &amp; Pulse &amp; Glide (P&amp;G 테크닉)</h3>
+              <p class="secret-summary">
+                현대 1.6T TMED 하이브리드의 엔진 클러치 분리 메커니즘을 역이용하여, 도심 및 고속도로에서 순수 전기모터로 수 킬로미터를 활주하는 최고급 연비 주행법입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">실전 P&amp;G 3단계 테크닉:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>Pulse (가속):</strong> 목표 속도(도심 50~70km/h, 고속 100~110km/h)까지 에코 게이지 50~60%로 시원하게 가속합니다.</li>
+                  <li><span class="step-num">2</span> <strong>Fuel-cut (발 떼기):</strong> 가속페달에서 발을 0.3~0.5초 동안 완전히 뗍니다. 엔진 연료가 차단되며 엔진 클러치가 '툭' 분리됩니다.</li>
+                  <li><span class="step-num">3</span> <strong>Glide (EV 락인):</strong> 에코 게이지 30~40% 이내로 부드럽게 지그시 밟으면 엔진 개입 없이 순수 EV 모드로 수 킬로미터를 미끄러지듯 주행합니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-success">
+                <span class="callout-icon" aria-hidden="true">🔋</span>
+                <div class="callout-text">
+                  <strong>최적 SOC 관리:</strong> 배터리 잔량을 45~60%로 유지하세요. 35% 이하로 떨어지면 정차 시 강제 엔진 공회전 충전이 걸려 연비가 급감합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="pulse-glide" aria-pressed="false" aria-label="P&amp;G 연비 주행법 꿀팁 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 7: Paddle Regen & One-Pedal Full Stop -->
+          <article class="secret-card glass-card card-hover" data-category="hybrid" id="secret-paddle-regen">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-emerald"><span class="badge-dot"></span>하이브리드 연비</span>
+                <span class="secret-badge badge badge-subtle">회생제동 마스터</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#07</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">패들시프트 회생제동 &amp; 원페달 풀스탑</h3>
+              <p class="secret-summary">
+                브레이크 패드 마모를 없애고 제동 에너지를 100% 전기로 회수하는 패들시프트 활용법과 주행 모드별 필수 주의사항입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">회생제동 핵심 활용법:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>모드별 기능 차이:</strong> ECO 모드에서는 패들시프트가 <strong>회생제동(0~3단계)</strong>을 조절하지만, SPORT 모드에서는 <strong>6단 수동변속기</strong>로 작동합니다. (스포츠 모드에서 왼쪽 패들을 당기면 급격한 엔진 브레이크 고RPM 굉음 발생 주의!).</li>
+                  <li><span class="step-num">2</span> <strong>원페달 풀스탑 (Left Paddle Hold):</strong> 감속 중 왼쪽 패들(-)을 0.4초 이상 당기고 있으면 회생제동이 MAX로 작동하며 브레이크 없이 0km/h까지 완전 정차하고 Auto Hold가 자동 체결됩니다.</li>
+                  <li><span class="step-num">3</span> <strong>스마트 회생제동 AUTO:</strong> 오른쪽 패들(+)을 1.0초 이상 당기면 계기판에 <code>AUTO</code>가 켜지며 전방 레이더와 도로 경사도를 계산해 최적으로 자동 제동합니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-info">
+                <span class="callout-icon" aria-hidden="true">💡</span>
+                <div class="callout-text">
+                  <strong>패드 마모 제로:</strong> 긴 내리막길이나 톨게이트 감속 시 패들시프트 회생제동을 활용하면 브레이크 페이드 방지와 배터리 급속 충전을 동시에 달성합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="paddle-regen" aria-pressed="false" aria-label="회생제동 패들 꿀팁 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 8: Battery Thermal Management & Climate -->
+          <article class="secret-card glass-card card-hover" data-category="hybrid" id="secret-battery-thermal">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-emerald"><span class="badge-dot"></span>하이브리드 연비</span>
+                <span class="secret-badge badge badge-subtle">배터리 열관리</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#08</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">하이브리드 배터리 열관리 &amp; 공조 연비 팁</h3>
+              <p class="secret-summary">
+                PTC 전기 히터가 없는 투싼 하이브리드의 엔진 냉각수 열원 난방 특성과 2열 시트 하부 공랭식 배터리 흡기구 보호 요령입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">계절별 공조 최적화 수칙:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>겨울철 히터 연비 방어:</strong> 엔진 냉각수(65℃ 이상)로 난방하므로 실내 온도를 23℃ 이상 설정하면 신호 대기 중에도 엔진이 계속 공회전합니다. 시트 열선과 스티어링 열선을 우선 켜고 공조 온도는 <strong>20~21℃</strong>로 맞추면 겨울철 연비를 15~20% 방어합니다.</li>
+                  <li><span class="step-num">2</span> <strong>여름철 배터리 과열 방지:</strong> 1.49 kWh 리튬이온 배터리는 2열 시트 하부에 장착되어 실내 에어컨 냉기로 냉각됩니다. 폭염 시 에어컨을 끄고 창문을 열고 달리면 배터리가 과열(42℃ 이상)되어 모터 출력이 제한됩니다.</li>
+                  <li><span class="step-num">3</span> <strong>2열 흡기구 막힘 엄금:</strong> 2열 시트 발밑의 배터리 흡기 통풍구를 두꺼운 코일 매트, 담요, 여행용 캐리어로 가로막지 않도록 주의하세요.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-warning">
+                <span class="callout-icon" aria-hidden="true">⚠️</span>
+                <div class="callout-text">
+                  <strong>주의:</strong> 흡기구가 막히면 배터리 셀 온도가 상승해 충전 효율이 급감하고 배터리 수명이 단축됩니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="battery-thermal" aria-pressed="false" aria-label="배터리 열관리 공조 꿀팁 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 9: Zinc Alloy Key Case (Safety Core) -->
+          <article class="secret-card glass-card card-hover" data-category="accessory" id="secret-key-case">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-amber"><span class="badge-dot"></span>추천 용품</span>
+                <span class="secret-badge badge badge-red"><span class="badge-dot"></span>사고 예방 1순위</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#09</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">스마트키 버튼 함몰형 아연합금 하드 케이스</h3>
+              <p class="secret-summary">
+                바지 주머니 속 1.5초 압박으로 인한 트렁크 오개방 및 천장 배관 충돌을 물리적으로 완벽 차단하는 필수 1순위 하드웨어 안전 장비입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">추천 사양 및 구매 체크포인트:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>1.5~2.5mm 돌출 베젤 립:</strong> 버튼 주위로 단단한 턱이 솟아 있어 외부 평면 압력이 가해져도 금속 프레임이 하중을 분산 지지합니다.</li>
+                  <li><span class="step-num">2</span> <strong>실리콘 젤리 케이스 절대 금지:</strong> 흐물거리는 실리콘 케이스는 착석 시 천 직물의 압박을 그대로 전달하므로 아무런 방어 효과가 없습니다.</li>
+                  <li><span class="step-num">3</span> <strong>카라비너 루프 체결:</strong> 케이스 고리에 카라비너를 연결해 바지 벨트 고리나 가방 외부에 걸어 주머니 압박을 원천 배제하세요.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-warning">
+                <span class="callout-icon" aria-hidden="true">🛡️</span>
+                <div class="callout-text">
+                  <strong>비용 대비 효용:</strong> 2~3만 원대 아연합금 프레임 케이스 하나로 150만 원 상당의 테일게이트 판금 교체 수리비를 영구 예방합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="key-case" aria-pressed="false" aria-label="아연합금 키케이스 추천 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 10: 2-Tier Center Console Organizer -->
+          <article class="secret-card glass-card card-hover" data-category="accessory" id="secret-console-tray">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-amber"><span class="badge-dot"></span>추천 용품</span>
+                <span class="secret-badge badge badge-subtle">실내 수납 확장</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#10</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">2단 센터 콘솔 트레이 오거나이저</h3>
+              <p class="secret-summary">
+                너무 깊어 소지품이 뒤섞이는 센터 콘솔 암레스트 박스에 딱 맞는 상단 분할 트레이를 얹어 상하 2단으로 수납 효율을 2배 높입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">연식별 전용 핏 선택 가이드:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>NX4 전기형 (버튼식 변속기):</strong> 직사각형 콘솔 박스 상단 림에 걸치는 전용 일체형 트레이 선택.</li>
+                  <li><span class="step-num">2</span> <strong>더 뉴 투싼 페이스리프트 (칼럼식):</strong> 플로팅 콘솔 상단 림 전용 트레이 + 하단 플로팅 언더 트레이 세트 조합 추천.</li>
+                  <li><span class="step-num">3</span> <strong>논슬립 고무 패드:</strong> 주행 중 스마트키나 동전이 달그락거리는 잡소리를 방지하는 실리콘 패드 내장 제품을 선택하세요.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-info">
+                <span class="callout-icon" aria-hidden="true">💡</span>
+                <div class="callout-text">
+                  <strong>공간 분리:</strong> 상단 트레이에는 스마트키, 출입카드, 충전선을, 하단에는 물티슈나 차량등록증을 보관해 깔끔함을 유지합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="console-tray" aria-pressed="false" aria-label="콘솔 트레이 추천 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 11: Panoramic Display Matte AR Film -->
+          <article class="secret-card glass-card card-hover" data-category="accessory" id="secret-ar-film">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-amber"><span class="badge-dot"></span>추천 용품</span>
+                <span class="secret-badge badge badge-subtle">전장 시인성 개선</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#11</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">12.3인치 커브드 디스플레이 무광 저반사(AR) 보호필름</h3>
+              <p class="secret-summary">
+                대화면 파노라믹 커브드 디스플레이에 비치는 강렬한 주간 직사광선 난반사 눈부심을 원천 차단하고, 지문 유분 얼룩 없는 부드러운 터치감을 제공합니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">추천 사양 및 특장점:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>AG/AR 나노 코팅:</strong> Anti-Glare 무광 처리로 햇빛 눈부심을 줄이고, 내비게이션 주간 시인성을 극대화합니다.</li>
+                  <li><span class="step-num">2</span> <strong>올레포빅 지문 방지:</strong> 손가락 유분 얼룩이 묻지 않아 화면을 매번 극세사 타월로 닦을 필요가 없습니다.</li>
+                  <li><span class="step-num">3</span> <strong>1:1 정밀 일체형 핏:</strong> 계기판 클러스터와 인포테인먼트가 하나로 이어진 풀커버 정밀 레이저 재단 제품을 권장합니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-info">
+                <span class="callout-icon" aria-hidden="true">💡</span>
+                <div class="callout-text">
+                  <strong>시공 팁:</strong> 먼지가 없는 지하주차장에서 차량 에어컨을 끄고 분무기로 정전기를 가라앉힌 뒤 부착하면 기포 없이 부착됩니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="ar-film" aria-pressed="false" aria-label="무광 저반사 필름 추천 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 12: SUS304 Trunk Bumper Protector -->
+          <article class="secret-card glass-card card-hover" data-category="accessory" id="secret-bumper-guard">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-amber"><span class="badge-dot"></span>추천 용품</span>
+                <span class="secret-badge badge badge-subtle">외장 범퍼 보호</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#12</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">SUS304 스테인리스 트렁크 리어 범퍼 프로텍터</h3>
+              <p class="secret-summary">
+                무거운 골프백, 접이식 유모차, 캠핑 박스를 트렁크에 싣고 내릴 때 리어 범퍼 상단 플라스틱 도장면이 찍히거나 긁히는 참사를 방지하는 외장 보호대입니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">구성 및 추천 포인트:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>SUS304 스테인리스:</strong> 녹과 부식에 강하며 무거운 금속 짐 하중에도 찌그러지지 않는 고강도 스틸 재질.</li>
+                  <li><span class="step-num">2</span> <strong>내측 + 외측 2P 세트:</strong> 트렁크 개구부 안쪽 턱을 보호하는 내측 스커프 플레이트와 외측 범퍼 가드 동시 시공 추천.</li>
+                  <li><span class="step-num">3</span> <strong>헤어라인 무광 마감:</strong> 고급스러운 블랙 티타늄 또는 실버 헤어라인 패턴으로 드레스업 효과까지 제공합니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-success">
+                <span class="callout-icon" aria-hidden="true">🛡️</span>
+                <div class="callout-text">
+                  <strong>중고차 감가 방어:</strong> 범퍼 상단 흠집을 예방하여 패밀리카나 레저 활동 후 차량 가치를 깨끗하게 보존합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="bumper-guard" aria-pressed="false" aria-label="범퍼 프로텍터 추천 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 13: Wireless CarPlay / Android Auto Dongle -->
+          <article class="secret-card glass-card card-hover" data-category="accessory" id="secret-wireless-dongle">
+            <div class="secret-card-header">
+              <div class="secret-badges">
+                <span class="secret-badge badge badge-amber"><span class="badge-dot"></span>추천 용품</span>
+                <span class="secret-badge badge badge-subtle">스마트 편의 장비</span>
+              </div>
+              <span class="secret-num" aria-hidden="true">#13</span>
+            </div>
+            <div class="secret-card-body">
+              <h3 class="secret-title">무선 카플레이 / 안드로이드 오토 어댑터 동글</h3>
+              <p class="secret-summary">
+                승차할 때마다 유선 케이블을 꽂는 번거로움을 없애고, 시동을 켜는 즉시 스마트폰 T맵, 네이버지도, 카카오내비, 음악 스트리밍이 자동 무선 연결됩니다.
+              </p>
+              <div class="secret-steps">
+                <h4 class="steps-title">선택 가이드 및 실전 장점:</h4>
+                <ol class="step-list secret-step-list">
+                  <li><span class="step-num">1</span> <strong>5.8GHz 고속 Wi-Fi 전송:</strong> 내비게이션 딜레이나 끊김 없는 저지연 칩셋 탑재 제품 선택.</li>
+                  <li><span class="step-num">2</span> <strong>8~12초 초고속 부팅:</strong> 차량 탑승 후 안전벨트를 매는 동안 스마트폰과 무선 페어링이 자동 완료됩니다.</li>
+                  <li><span class="step-num">3</span> <strong>깔끔한 콕핏:</strong> 센터페시아 주변에 지저분하게 늘어진 충전 케이블이 사라져 실내 인테리어가 깔끔해집니다.</li>
+                </ol>
+              </div>
+              <div class="secret-callout callout-info">
+                <span class="callout-icon" aria-hidden="true">💡</span>
+                <div class="callout-text">
+                  <strong>편의 팁:</strong> 차량 무선 충전 패드 위에 스마트폰을 올려두기만 하면 충전과 무선 내비게이션이 동시에 작동합니다.
+                </div>
+              </div>
+            </div>
+            <div class="secret-card-footer secret-card-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-bookmark secret-bookmark-btn" data-secret-id="wireless-dongle" aria-pressed="false" aria-label="무선 카플레이 동글 추천 저장">
+                <span class="bookmark-icon" aria-hidden="true">⭐</span> <span class="bookmark-text">유용한 팁 저장</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Interactive Tailgate Height Simulator (M1 Hook / M3 Implementation) -->
+    <section id="simulator-section" class="section simulator-section" aria-labelledby="simulator-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">INTERACTIVE TOOL</span>
+          <h2 id="simulator-heading" class="section-title">트렁크 개방 높이 & 천장 충돌 시뮬레이터</h2>
+          <p class="section-subtitle section-desc">
+            지하주차장 천장 배관 높이와 테일게이트 개방 각도에 따른 충돌 여부를 실시간으로 시뮬레이션해보세요.
+          </p>
+        </div>
+
+        <!-- M3 Mount Container Target -->
+        <div id="simulator-container" class="simulator-card">
+          <!-- Simulator Controls -->
+          <div class="sim-controls">
+            <div class="control-group">
+              <div class="control-label-group">
+                <label for="ceiling-height-slider" class="control-label">천장 배관 높이 설정:</label>
+                <output id="ceiling-height-output" for="ceiling-height-slider" class="highlight-val">210cm</output>
+              </div>
+              <input 
+                type="range" 
+                id="ceiling-height-slider" 
+                name="ceiling-height"
+                class="sim-slider" 
+                min="180" 
+                max="260" 
+                value="210" 
+                step="5"
+                aria-valuemin="180" 
+                aria-valuemax="260" 
+                aria-valuenow="210"
+                aria-valuetext="천장 높이 210 센티미터 (표준 아파트 배관 높이)"
+                aria-describedby="sim-slider-hint"
+              >
+              <p id="sim-slider-hint" class="hint-text">
+                슬라이더를 좌우로 드래그하거나 키보드 방향키(←, →)를 사용하여 5cm 단위로 조절하세요.
+              </p>
+            </div>
+
+            <!-- Quick Height Presets -->
+            <div class="preset-group" role="group" aria-label="주차장 유형별 사전 설정">
+              <span class="preset-label">대표 주차장 환경:</span>
+              <button type="button" class="preset-btn btn-preset" data-preset="190" data-height="190">구축 지하주차장 배관 (190cm)</button>
+              <button type="button" class="preset-btn btn-preset active" data-preset="210" data-height="210">표준 아파트 지하 (210cm)</button>
+              <button type="button" class="preset-btn btn-preset" data-preset="230" data-height="230">신축 대형 주차장 (230cm)</button>
+            </div>
+
+            <!-- Tucson Tailgate Height Presets -->
+            <div class="preset-group" role="group" aria-label="투싼 테일게이트 개방 설정">
+              <span class="preset-label">투싼 트렁크 설정:</span>
+              <button type="button" class="btn-tailgate-mode active" data-mode="full">완전 열림 (215cm)</button>
+              <button type="button" class="btn-tailgate-mode" data-mode="level3">3단계 (195cm)</button>
+              <button type="button" class="btn-tailgate-mode" data-mode="level2">2단계 (180cm)</button>
+            </div>
+          </div>
+
+          <!-- SVG Visualizer Canvas -->
+          <div class="sim-visualizer-wrapper">
+            <svg id="tailgate-svg" class="tailgate-visualizer" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="svg-sim-title svg-sim-desc">
+              <title id="svg-sim-title">투싼 테일게이트 충돌 시뮬레이션 다이어그램</title>
+              <desc id="svg-sim-desc">설정된 천장 및 배관 높이와 테일게이트 개방 궤적의 충돌 위험도를 표시합니다.</desc>
+              
+              <!-- Background Grid -->
+              <defs>
+                <pattern id="sim-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+                </pattern>
+                <pattern id="hazard-pipe-pattern" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <rect width="10" height="20" fill="#f59e0b"/>
+                  <rect x="10" width="10" height="20" fill="#111827"/>
+                </pattern>
+                <filter id="collision-glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="6" result="blur"/>
+                  <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              <rect width="800" height="450" fill="url(#sim-grid)" />
+
+              <!-- Ground Line -->
+              <line x1="50" y1="400" x2="750" y2="400" stroke="#484f58" stroke-width="3" />
+              <text x="60" y="420" fill="#8b949e" font-size="12">지면 (0cm)</text>
+
+              <!-- Ceiling Line (Dynamic) -->
+              <g id="svg-ceiling-group" transform="translate(0, 0)">
+                <line id="svg-ceiling-line" x1="50" y1="130" x2="750" y2="130" stroke="#f85149" stroke-width="3" stroke-dasharray="6 4" />
+                <rect id="svg-pipe-rect" x="350" y="110" width="80" height="20" fill="url(#hazard-pipe-pattern)" stroke="#f85149" stroke-width="2" rx="4" />
+                <text id="svg-ceiling-text" x="440" y="125" fill="#f85149" font-size="13" font-weight="bold">천장 소방 배관 (210cm)</text>
+              </g>
+
+              <!-- Vehicle Outline (Tucson NX4 Silhouette Representation) -->
+              <g id="svg-tucson-body">
+                <path d="M 120 400 L 120 310 Q 150 250 220 230 L 380 230 Q 420 230 450 260 L 520 310 L 580 310 L 580 400 Z" fill="#161b22" stroke="#58a6ff" stroke-width="2" />
+                <circle cx="210" cy="400" r="35" fill="#0d1117" stroke="#8b949e" stroke-width="4" />
+                <circle cx="490" cy="400" r="35" fill="#0d1117" stroke="#8b949e" stroke-width="4" />
+                <text x="260" y="330" fill="#8b949e" font-size="14">현대 투싼 하이브리드 (전고 1,665mm)</text>
+              </g>
+
+              <!-- Tailgate Door Arc (Dynamic) -->
+              <g id="svg-tailgate-door">
+                <line id="svg-tailgate-bar" x1="520" y1="310" x2="570" y2="120" stroke="#388bfd" stroke-width="6" stroke-linecap="round" />
+                <circle id="svg-spoiler-point" cx="570" cy="120" r="8" fill="#f85149" stroke="#ffffff" stroke-width="2" />
+                <text id="svg-tailgate-max-text" x="590" y="125" fill="#58a6ff" font-size="13">트렁크 개방 높이 (215cm)</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Collision Status Live Region -->
+          <div id="simulator-status" class="status-callout status-danger" role="status" aria-live="polite">
+            <div class="status-icon" aria-hidden="true">💥</div>
+            <div class="status-content">
+              <strong class="status-title">충돌 위험 경고: 천장 배관 직격!</strong>
+              <p class="status-desc">
+                현재 설정에서 테일게이트 개방 높이(215cm)가 천장 배관(210cm)보다 <strong>5cm 높아</strong> 상부 루프 스포일러가 직접 충돌합니다. 트렁크 높이를 '3단계'로 낮추거나 3초 롱프레스 메모리로 195cm 이하로 설정하세요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Interactive 7-Step Prevention Checklist (M1 Hook / M3 Implementation) -->
+    <section id="checklist-section" class="section checklist-section" aria-labelledby="checklist-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">SELF ASSESSMENT</span>
+          <h2 id="checklist-heading" class="section-title">투싼 차주 안전 자가진단 7대 체크리스트</h2>
+          <p class="section-subtitle">
+            체크 결과는 브라우저(LocalStorage)에 자동 저장됩니다. 나의 안전 지수를 100%로 완성해보세요.
+          </p>
+        </div>
+
+        <!-- M3 Mount Container Target -->
+        <div id="checklist-container" class="checklist-card">
+          <!-- Score Summary Header -->
+          <div class="checklist-score-header">
+            <div class="score-ring-wrapper">
+              <svg class="score-ring" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="안전 점검 완료율 원형 게이지">
+                <circle class="ring-bg" cx="50" cy="50" r="40" fill="none" stroke="#21262d" stroke-width="8" />
+                <circle id="score-ring-progress" class="ring-progress" cx="50" cy="50" r="40" fill="none" stroke="#238636" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="251.2" stroke-linecap="round" />
+              </svg>
+              <div class="score-number-box">
+                <span id="checklist-score" class="score-value">0%</span>
+              </div>
+            </div>
+            <div class="score-info">
+              <h3 id="checklist-status-title" class="score-title">안전 조치 점검 전</h3>
+              <p id="checklist-status-desc" class="score-desc">7개 항목을 하나씩 점검하며 내 차의 안전을 확보하세요.</p>
+              <span id="checklist-badge" class="badge badge-danger">위험: 즉시 점검 필요</span>
+            </div>
+          </div>
+
+          <!-- Screen Reader Live Announcer for Checkbox Updates -->
+          <div id="checklist-announcer" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+
+          <!-- 7-Step Form Checklist -->
+          <form id="checklist-form" onsubmit="return false;">
+            <fieldset class="checklist-fieldset">
+              <legend class="visually-hidden">투싼 하이브리드 트렁크 오개방 예방 7대 수칙</legend>
+
+              <div class="checklist-items">
+                <!-- Item 1 -->
+                <div class="check-row">
+                  <input type="checkbox" id="check-step-1" class="check-input" value="1" data-weight="15">
+                  <label for="check-step-1" class="check-label">
+                    <span class="check-custom" aria-hidden="true"></span>
+                    <span class="check-text">
+                      <strong class="check-title">[차량 설정] 스마트 테일게이트 기능 비활성화 완료</strong>
+                      <span class="check-desc">차량 뒤에 3초 서 있을 때 자동으로 열리는 기능을 껐습니다. (ccNC/Gen5W 인포테인먼트)</span>
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="check-row">
+                  <input type="checkbox" id="check-step-2" class="check-input" value="2" data-weight="20">
+                  <label for="check-step-2" class="check-label">
+                    <span class="check-custom" aria-hidden="true"></span>
+                    <span class="check-text">
+                      <strong class="check-title">[높이 조절] 트렁크 개방 높이 메모리 설정 (3초 롱프레스)</strong>
+                      <span class="check-desc">자주 이용하는 주차장 배관에 닿지 않도록 닫힘 버튼 3초 비프음으로 높이를 고정했습니다.</span>
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="check-row">
+                  <input type="checkbox" id="check-step-3" class="check-input" value="3" data-weight="10">
+                  <label for="check-step-3" class="check-label">
+                    <span class="check-custom" aria-hidden="true"></span>
+                    <span class="check-text">
+                      <strong class="check-title">[속도 조절] 파워 테일게이트 개방 속도를 '보통'으로 변경</strong>
+                      <span class="check-desc">급작스러운 개방 충돌을 막기 위해 속도를 '빠르게'에서 '보통'으로 낮췄습니다.</span>
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="check-row">
+                  <input type="checkbox" id="check-step-4" class="check-input" value="4" data-weight="20">
+                  <label for="check-step-4" class="check-label">
+                    <span class="check-custom" aria-hidden="true"></span>
+                    <span class="check-text">
+                      <strong class="check-title">[물리 장비] 아연합금 하드 케이스 또는 돌출 베젤 TPU 케이스 착용</strong>
+                      <span class="check-desc">눌림 방지 효과가 없는 얇은 실리콘 케이스를 치우고 프레임 하드 케이스를 장착했습니다.</span>
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="check-row">
+                  <input type="checkbox" id="check-step-5" class="check-input" value="5" data-weight="15">
+                  <label for="check-step-5" class="check-label">
+                    <span class="check-custom" aria-hidden="true"></span>
+                    <span class="check-text">
+                      <strong class="check-title">[휴대 습관] 바지 앞주머니 보관 중단 (벨트 카라비너 / 가방 수납)</strong>
+                      <span class="check-desc">착석 시 대퇴부 직물 장력이 가해지지 않도록 스마트키 수납 위치를 바꿨습니다.</span>
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="check-row">
+                  <input type="checkbox" id="check-step-6" class="check-input" value="6" data-weight="10">
+                  <label for="check-step-6" class="check-label">
+                    <span class="check-custom" aria-hidden="true"></span>
+                    <span class="check-text">
+                      <strong class="check-title">[기계식 주차] 주차타워 입고 전 파워 테일게이트 OFF 수칙 숙지</strong>
+                      <span class="check-desc">팔레트 이동 중 스마트키 원격 신호로 인한 압착 사고 방지 절차를 확인했습니다.</span>
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="check-row">
+                  <input type="checkbox" id="check-step-7" class="check-input" value="7" data-weight="10">
+                  <label for="check-step-7" class="check-label">
+                    <span class="check-custom" aria-hidden="true"></span>
+                    <span class="check-text">
+                      <strong class="check-title">[실내 보관] 귀가 즉시 키 트레이 또는 금속 틴케이스 보관</strong>
+                      <span class="check-desc">소파나 침대에서 깔고 앉아 지하주차장으로 전파가 투과되는 것을 방지합니다.</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="checklist-actions">
+              <button type="button" id="btn-reset-checklist" class="btn btn-outline-secondary" aria-label="체크리스트 전체 점검 초기화">
+                점검 초기화
+              </button>
+              <button type="button" id="share-score-btn" class="btn btn-outline-primary share-btn btn-share" aria-label="결과 공유하기 - 체크리스트 달성 결과 클립보드 복사">
+                결과 공유하기
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Printable Glovebox Cheat Sheet (M1 Hook / M2 Content) -->
+    <section id="cheat-sheet-section" class="section cheat-sheet-section" aria-labelledby="cheatsheet-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">EMERGENCY MANUAL</span>
+          <h2 id="cheatsheet-heading" class="section-title">글러브박스 보관용 비상 요약 카드</h2>
+          <p class="section-subtitle section-desc">
+            A4 1장으로 출력하여 4단으로 접어 차량 글러브박스나 콘솔에 상시 보관하세요.
+          </p>
+          <div class="print-actions no-print">
+            <button type="button" id="print-trigger-btn" class="btn btn-primary btn-lg print-btn" aria-label="A4 비상 요약 카드 인쇄하기 (글러브박스 보관용)">
+              🖨️ A4 비상 요약 카드 인쇄하기
+            </button>
+            <span class="print-hint">※ 브라우저 인쇄 창에서 <strong>'배경 그래픽'</strong> 옵션을 활성화하세요.</span>
+          </div>
+        </div>
+
+        <!-- M2 Injectable Print Card Container Target (Dual-wired) -->
+        <div id="print-card" class="printable-card print-card glass-card" aria-label="투싼 하이브리드 비상 가이드 인쇄 카드">
+          <div class="print-card-header print-header">
+            <div class="print-header-main">
+              <span class="print-tag print-header-subtitle">현대 투싼 하이브리드 (NX4) 긴급 비상 매뉴얼</span>
+              <h3 class="print-title print-header-title">트렁크 오개방 방지 & 비상 대처 4단 요약 카드</h3>
+            </div>
+            <span class="print-header-badge">A4 4단 접이식</span>
+          </div>
+
+          <div class="card-fold-grid print-grid grid grid-2-col">
+            <div class="fold-col print-card">
+              <h4 class="fold-title print-card-title">🚨 1. 비상 시 즉각 멈춤</h4>
+              <ul class="fold-list print-list">
+                <li><strong>개방 중 즉시 정지:</strong> 스마트키의 <em>아무 버튼</em>(도어 잠금, 열림, 트렁크, 경적)이나 1회 탭하여 즉시 누르면 비상 정지.</li>
+                <li><strong>외부 손잡이 정지:</strong> 테일게이트 외부 손잡이 스위치를 1회 누르면 즉시 멈춤.</li>
+                <li><strong>수동 닫힘:</strong> 멈춘 상태에서 손으로 부드럽게 눌러 닫기.</li>
+              </ul>
+            </div>
+
+            <div class="fold-col print-card">
+              <h4 class="fold-title print-card-title">📐 2. 높이 메모리 3초 세팅</h4>
+              <ul class="fold-list print-list">
+                <li>1. 트렁크를 원하는 안전 높이까지 수동으로 맞춤.</li>
+                <li>2. 테일게이트 안쪽 닫힘 버튼을 <strong>3초 이상</strong> 꾹 누름.</li>
+                <li>3. <strong>'삐-' 소리</strong>(비프음)가 길게 울리면 영구 저장 완료.</li>
+                <li>4. 이후 스마트키나 실내 버튼으로 열어도 설정 높이까지만 열림.</li>
+              </ul>
+            </div>
+
+            <div class="fold-col print-card">
+              <h4 class="fold-title print-card-title">⚙️ 3. 차량 설정 OFF 경로</h4>
+              <ul class="fold-list print-list">
+                <li><strong>ccNC 인포테인먼트 설정:</strong><br><code>[설정] → [차량] → [도어] → [스마트 테일게이트] 체크 해제</code></li>
+                <li><strong>표준형 5W 내비게이션:</strong><br><code>[설정] → [차량] → [도어] → [스마트 테일게이트] 체크 해제</code></li>
+                <li><strong>클러스터 계기판:</strong><br><code>[사용자 설정] → [도어] → [스마트 테일게이트] 해제</code></li>
+                <li><strong>개방 속도 변경:</strong><br><code>[도어] → [파워 테일게이트 속도] → [보통]</code></li>
+              </ul>
+            </div>
+
+            <div class="fold-col print-card">
+              <h4 class="fold-title print-card-title">📞 4. 비상 연락 & 고객센터</h4>
+              <ul class="fold-list print-list">
+                <li><strong>현대자동차 고객센터:</strong> 080-600-6000</li>
+                <li><strong>블루링크 긴급출동:</strong> 1899-0600</li>
+                <li><strong>기계식 주차타워 입고 시:</strong> <code>[파워 테일게이트]</code> 완전 해제 필수.</li>
+                <li><strong>파손 시 필수 확보:</strong> 주차타워/아파트 관리실 CCTV 영상 즉시 백업 요청 (24시간 이내).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="print-card-footer print-footer">
+            <p>※ 본 카드는 현대자동차 투싼(NX4) 사용자 취급설명서 및 실사용자 피드백을 기반으로 제작된 안전 가이드입니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. Footer Landmark (M1) -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">TUCSON HYBRID SAFETY GUIDE</span>
+          <p class="footer-tagline">현대 투싼 하이브리드(NX4) 차주를 위한 스마트키 트렁크 사고 방지 솔루션</p>
+        </div>
+        <div class="footer-links">
+          <a href="#main-content" class="back-to-top" aria-label="페이지 맨 위로 이동">
+            맨 위로 이동 ↑
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <p>
+          <strong>법적 고지:</strong> 본 웹사이트는 현대자동차 공식 운영 웹사이트가 아니며, 투싼 하이브리드(NX4) 차주들의 안전한 차량 운용과 사고 예방을 위해 독립적으로 제작된 가이드입니다. 차량 설정 메뉴의 세부 명칭은 연식(전기형/더 뉴 투싼 페이스리프트) 및 내비게이션 소프트웨어 버전에 따라 다소 차이가 있을 수 있으므로 차량 매뉴얼을 함께 참고하시기 바랍니다.
+        </p>
+        <p class="footer-sources">
+          <strong>참고자료:</strong> 현대자동차 투싼(NX4) 사용자 취급설명서 도어 편, 보배드림 자동차 게시판 차주 사례, 국토교통부 자동차안전연구원 결함 신고 데이터.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Tucson Hybrid Owners Safety Guide. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pre-rendered Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

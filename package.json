@@ -1,0 +1,21 @@
+{
+  "name": "tucson-trunk-prevention-tips",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hyundai Tucson Hybrid Smart Key Trunk Prevention Tips & Interactive Guide",
+  "scripts": {
+    "build": "node scripts/build_validate.js",
+    "test": "node tests/e2e_runner.js",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "hyundai",
+    "tucson",
+    "hybrid",
+    "smart-key",
+    "tailgate",
+    "trunk-prevention"
+  ],
+  "author": "Antigravity Teamwork Swarm",
+  "license": "MIT"
+}
