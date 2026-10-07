@@ -4,7 +4,7 @@
   "private": true,
   "description": "Hyundai Tucson Hybrid Smart Key Trunk Prevention Tips & Interactive Guide",
   "scripts": {
-    "build": "node scripts/build_validate.js",
+    "build": "node scripts/build_validate.js && rm -rf public && mkdir -p public && cp -r index.html css js assets robots.txt sitemap.xml public/",
     "test": "node tests/e2e_runner.js",
     "start": "npx serve ."
   },
