@@ -37,14 +37,14 @@ jobs:
             - If you cannot settle on a safe fix, finish without changes and without a pull request.
 
             ## This repository
-            Static guide site for Hyundai Tucson Hybrid owners: plain `index.html` + `css/` + `js/` (app, checklist, manual, secrets, simulator, storage). No framework, no bundler. `vercel.json` sets a strict Content-Security-Policy (no external scripts; inline allowed).
+            Static guide site for Hyundai Tucson Hybrid owners: plain `index.html` + `css/` + `js/` (app, checklist, manual, secrets, simulator, storage). No framework, no bundler. `vercel.json` sets a Content-Security-Policy with `script-src 'self' 'unsafe-inline'`: inline scripts and inline event handlers are allowed, only third-party script hosts are blocked.
 
             Setup and checks:
             - Nothing to install. `npm test` runs `tests/e2e_runner.js`; `npm run build` runs `scripts/build_validate.js` and copies the site into `public/`.
             - The individual `tests/*.test.js` and `*.mjs` files run directly with `node tests/<file>`.
 
             Focus:
-            - `js/storage.js` SafeStorage fallbacks (quota, private mode), `js/checklist.js` state persistence, `js/simulator.js` geometry, `js/secrets.js` search, DOM listener cleanup, and anything that would violate the CSP (new inline handlers, external fetches).
+            - `js/storage.js` SafeStorage fallbacks (quota, private mode), `js/checklist.js` state persistence, `js/simulator.js` geometry, `js/secrets.js` search, DOM listener cleanup, and anything that would violate the CSP (scripts or fetches to hosts the policy does not list). Existing inline handlers are allowed by the policy and are not defects.
 
             Leave alone:
             - `vercel.json` headers, `sitemap.xml` / `robots.txt`, `assets/`, and the wording of the tips (a text preference is not a logic bug).
