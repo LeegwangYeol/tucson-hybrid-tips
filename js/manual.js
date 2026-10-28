@@ -220,6 +220,7 @@ export function initManual(containerOrSelector = '#manual') {
 
     searchInput.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
+        if (searchDebounceTimer) clearTimeout(searchDebounceTimer);
         searchInput.value = '';
         applySearchFilter('');
         searchInput.blur();
@@ -229,6 +230,7 @@ export function initManual(containerOrSelector = '#manual') {
 
   if (searchClearBtn) {
     searchClearBtn.addEventListener('click', () => {
+      if (searchDebounceTimer) clearTimeout(searchDebounceTimer);
       if (searchInput) {
         searchInput.value = '';
         searchInput.focus();
