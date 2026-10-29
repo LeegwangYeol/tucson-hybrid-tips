@@ -162,6 +162,10 @@ export function initScrollspy() {
   const navLinks = document.querySelectorAll('.nav-link');
   if (sections.length === 0 || navLinks.length === 0) return;
 
+  // Idempotency guard: prevent duplicate observers and scroll listeners
+  if (document.body.dataset.scrollspyBound === 'true') return;
+  document.body.dataset.scrollspyBound = 'true';
+
   function setActiveLink(activeId) {
     navLinks.forEach(link => {
       const href = link.getAttribute('href') || '';
