@@ -39,7 +39,12 @@ export class MemoryStorage {
 const memoryStore = new MemoryStorage();
 
 export class SafeStorage {
+  static _availabilityCache = {};
+
   static isAvailable(type) {
+    if (this._availabilityCache[type] !== undefined) {
+      return this._availabilityCache[type];
+    }
     if (typeof window === 'undefined') return false;
     try {
       const storage = window[type];
@@ -47,8 +52,10 @@ export class SafeStorage {
       const probe = '__tucson_storage_probe__';
       storage.setItem(probe, '1');
       storage.removeItem(probe);
+      this._availabilityCache[type] = true;
       return true;
     } catch {
+      this._availabilityCache[type] = false;
       return false;
     }
   }
