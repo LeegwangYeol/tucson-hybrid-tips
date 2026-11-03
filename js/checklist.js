@@ -130,6 +130,13 @@ export function initChecklist(containerId = '#checklist-container') {
   const resetBtn = container.querySelector('#btn-reset-checklist');
   const shareBtn = container.querySelector('#share-score-btn');
   const announcer = container.querySelector('#checklist-announcer');
+  const form = container.querySelector('#checklist-form');
+
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+    });
+  }
 
   const RING_CIRCUMFERENCE = 251.2; // 2 * PI * 40
 
