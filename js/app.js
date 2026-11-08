@@ -143,6 +143,10 @@ export function initMobileNavigation() {
 export function initScrollspy() {
   if (typeof document === 'undefined') return;
 
+  // Idempotency guard: prevent duplicate listeners and observer leaks
+  if (document.body.dataset.scrollspyBound === 'true') return;
+  document.body.dataset.scrollspyBound = 'true';
+
   const sectionIds = [
     'hero',
     'reality-check',
