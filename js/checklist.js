@@ -216,7 +216,8 @@ export function initChecklist(containerId = '#checklist-container') {
           document.body.appendChild(textarea);
           try {
             textarea.select();
-            document.execCommand('copy');
+            const success = document.execCommand('copy');
+            if (!success) throw new Error('execCommand failed');
           } finally {
             if (textarea.parentNode) {
               textarea.parentNode.removeChild(textarea);
